@@ -1,0 +1,18 @@
+# Site settings
+description: Visualize RRFSS data with Jekyll
+baseurl: "/RRFSS-data-explorer"
+url: "https://durhamregionharp.github.io"
+
+# User settings
+username: Durham Region HARP
+user_description: Epidemiologists making data fun again
+user_title: Health Analytics Research and Policy
+email: EEPilot@durham.ca
+twitter_username: durhamepis
+github_username: DurhamRegionHARP
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+sass:
+    style: compressed
