@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+script/bootstrap
+
+bundle exec jekyll doctor
+
+bundle exec rake test
+
+if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
+	git remote add "$REMOTE_NAME" "$REMOTE_URL" > /dev/null 2>&1
+	bundle exec rake prepare > /dev/null 2>&1 && bundle exec rake deploy > /dev/null 2>&1
+fi

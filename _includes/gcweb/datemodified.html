@@ -1,0 +1,11 @@
+<div class="row pagedetails">
+	<div class="col-xs-6 datemod">
+		<dl id="wb-dtmd" property="dateModified">
+			<dt>{{ site.data.i18n-base[page.language].tmpl-date-mod }}{{ site.data.i18n-base[page.language].space }}</dt>
+			<dd><time>{{ page.dateModified }}</time></dd>
+		</dl>
+	</div>
+	<div class="col-xs-6 text-right">
+		<a href="{{ site.data.i18n-gcweb[page.language].tmpl-feedback-link }}" class="btn btn-default"><span class="glyphicon glyphicon-comment mrgn-rght-sm"></span>{{ site.data.i18n-gcweb[page.language].tmpl-feedback }}<span class="wb-inv">{{ site.data.i18n-gcweb[page.language].tmpl-feedback-hidden }}</span></a>
+	</div>
+</div>

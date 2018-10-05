@@ -1,0 +1,10 @@
+<ul class="list-inline">
+{% if page.language == "en" or page.language == "fr" %}
+	<li><a href="http://{{ site.data.i18n-base[page.language].tmpl-health-url }}"><span>{{ site.data.i18n-base[page.language].tmpl-health }}</span></a></li>
+	<li><a href="http://{{ site.data.i18n-base[page.language].tmpl-travel-url }}"><span>{{ site.data.i18n-base[page.language].tmpl-travel }}</span></a></li>
+	<li><a href="http://www.servicecanada.gc.ca/{{ site.data.i18n-base[page.language].lang-code-iso-639-2 }}/{{ site.data.i18n-theme-gcwu-fegc[page.language].tmpl-home-url }}.shtml"><span>{{ site.data.i18n-base[page.language].tmpl-servicecanada }}</span></a></li>
+	<li><a href="http://www.{{ site.data.i18n-base[page.language].tmpl-jobs-url }}"><span>{{ site.data.i18n-base[page.language].tmpl-jobs }}</span></a></li>
+	<li><a href="http://{{ site.data.i18n-base[page.language].tmpl-economy-url }}/{{ page.language }}"><span>{{ site.data.i18n-base[page.language].tmpl-economy }}</span></a></li>
+{% endif %}
+	<li id="canada-ca"><a href="http://www.canada.ca/{% if page.language == 'en' or page.language == 'fr' %}{{ page.language }}/index.html{% endif %}">Canada.ca</a></li>
+</ul>

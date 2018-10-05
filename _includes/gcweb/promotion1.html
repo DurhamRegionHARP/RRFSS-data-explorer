@@ -1,0 +1,38 @@
+<aside class="prm-flpr">
+	<div class="container">
+		<div class="row">
+			<h2 class="wb-inv">{{ site.data.i18n-gcweb[page.language].tmpl-promo-title }}</h2>
+			<div class="wb-tabs carousel-s2 playing" data-speed="slow">
+				<ul role="tablist">
+					<li class="active"><a href="#tab1" title="{% if page.language == "en" %}Tab 1: Banff National Park{% else %}Languette 1 : Parc national Banff{% endif %}"><img src="http://wet-boew.github.io/themes-dist/GCWeb/img/promos/one.jpg" alt="" /></a></li>
+					<li><a href="#tab2" title="{% if page.language == "en" %}Tab 2: Algonquin Provincial Park{% else %}Languette 2 : Parc Provincial Algonquin{% endif %}"><img src="http://wet-boew.github.io/themes-dist/GCWeb/img/promos/two.jpg" alt="" /></a></li>
+					<li><a href="#tab3" title="{% if page.language == "en" %}Tab 3: Rideau Canal{% else %}Languette 3 : Canal Rideau{% endif %}"><img src="http://wet-boew.github.io/themes-dist/GCWeb/img/promos/three.jpg" alt="" /></a></li>
+				</ul>
+				<div role="tabpanel" id="tab1" class="in fade">
+					<figure>
+						<img src="http://wet-boew.github.io/themes-dist/GCWeb/img/promos/one.jpg" alt="" />
+						<figcaption>
+							<p><a href="#" class="learnmore">{% if page.language == "en" %} Banff National Park {% else %} Parc national Banff {% endif %}</a></p>
+						</figcaption>
+					</figure>
+				</div>
+				<div role="tabpanel" id="tab2" class="out fade">
+					<figure>
+						<img src="http://wet-boew.github.io/themes-dist/GCWeb/img/promos/two.jpg" alt="" />
+						<figcaption>
+							<p><a href="#" class="learnmore">{% if page.language == "en" %} Algonquin Provincial Park {% else %} Parc Provincial Algonquin {% endif %}</a></p>
+						</figcaption>
+					</figure>
+				</div>
+				<div role="tabpanel" id="tab3" class="out fade">
+					<figure>
+						<img src="http://wet-boew.github.io/themes-dist/GCWeb/img/promos/three.jpg" alt="" />
+						<figcaption>
+							<p><a href="#" class="learnmore">{% if page.language == "en" %} Rideau Canal {% else %} Canal Rideau {% endif %}</a></p>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</div>
+</aside>

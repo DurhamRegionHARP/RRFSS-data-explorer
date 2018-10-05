@@ -1,0 +1,8 @@
+<ul id="gc-tctr" class="list-inline">
+{% if page.language == "fr" %}
+	<li><a rel="license" href="http://wet-boew.github.io/wet-boew/Licence-fr.html">{{ site.data.i18n-base[page.language].tmpl-terms }}</a></li>
+{% else %}
+	<li><a rel="license" href="http://wet-boew.github.io/wet-boew/License-en.html">{{ site.data.i18n-base[page.language].tmpl-terms }}</a></li>
+{% endif %}
+	<li><a href="http://www.tbs-sct.gc.ca/tbs-sct/common/trans-{{ site.data.i18n-base[page.language].lang-code-iso-639-2 }}.asp">{{ site.data.i18n-base[page.language].tmpl-transparency }}</a></li>
+</ul>
