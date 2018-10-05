@@ -1,9 +1,0 @@
-{% if page.experimental == null or page.experimental == '' %}
-	<div class="brand col-xs-9 col-md-6">
-		<a href="http://www.canada.ca/{{ page.language }}/index.html"><object type="image/svg+xml" tabindex="-1" data="http://wet-boew.github.io/themes-dist/GCWeb/assets/sig-blk-{{ page.language }}.svg"></object><span class="wb-inv"> {{ site.data.i18n-base[page.language].tmpl-gc-sig }}</span></a>
-	</div>
-{% else %}
-	<div class="brand col-xs-6">
-		<a href="http://www.canada.ca/{{ page.language }}/index.html"><span class="cndwrdmrk"><span class="wb-inv"> {{ site.data.i18n-base[page.language].tmpl-gc-wmms }}</span></span></a>
-	</div>
-{% endif %}

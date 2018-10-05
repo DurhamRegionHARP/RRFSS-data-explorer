@@ -1,7 +1,7 @@
 ---
 published: true
 layout: "theme-base/default"
-permalink: "index-en.html"
+permalink: "index.html"
 title: RRFSS Data Explorer
 language: en
 altLangPrefix: index
@@ -13,14 +13,12 @@ breadcrumb: "false"
 secondarymenu: "false"
 ---
 <div class="row">
-	<div class="col-md-4 pull-left">
-		<div class="well mrgn-bttm-md">
-			<img src="{{ "/assets/images/rrfss.png" | relative_url }}" alt="RRFSS logo" />
-		</div>
-		<div class="mrgn-lft-md mrgn-rght-md">
-			{{% capture about_rrfss %}}{{include about.md}}{{% endcapture %}}
-			{{ about_rrfss | markdownify }}
-		</div>
+	<div class="col-md-3">
+		<img class="img-rounded img-responsive" src="{{ "/assets/images/rrfss.png" | relative_url }}" alt="RRFSS logo" />
+	</div>
+	<div class="col-md-6">
+		{% capture about_rrfss %}{% include about.md %}{% endcapture %}
+		{{ about_rrfss | markdownify }}
 	</div>
 </div>
 <div class="row">

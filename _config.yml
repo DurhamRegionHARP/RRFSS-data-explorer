@@ -2,6 +2,7 @@
 # Turn this into a basic template for HARP
 
 # Site settings
+title: RRFSS Data Explorer
 description: Make data beautiful with Jekyll
 baseurl: "/RRFSS-data-explorer"
 url: "https://durhamregionharp.github.io"
