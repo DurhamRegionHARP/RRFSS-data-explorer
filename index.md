@@ -13,10 +13,11 @@ breadcrumb: "false"
 secondarymenu: "false"
 ---
 <div class="row">
-	<div class="col-md-3">
-		<img class="img-rounded img-responsive" src="{{ "/assets/images/rrfss.png" | relative_url }}" alt="RRFSS logo" />
+	<div class="col-md-7">
+		<img class="img-rounded img-responsive" src="{{ "/assets/images/front.jpg" | relative_url }}" alt="Person completing survey" />
 	</div>
-	<div class="col-md-6">
+	<div class="col-md-5">
+		<img class="img-rounded img-responsive" src="{{ "/assets/images/rrfss.png" | relative_url }}" alt="RRFSS logo" />
 		{% capture about_rrfss %}{% include about.md %}{% endcapture %}
 		{{ about_rrfss | markdownify }}
 	</div>
