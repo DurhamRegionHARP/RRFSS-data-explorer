@@ -14,7 +14,35 @@ secondarymenu: "false"
 ---
 <div class="row">
 	<div class="col-md-7">
-		<img class="img-rounded img-responsive" src="{{ "/assets/images/front.jpg" | relative_url }}" alt="Person completing survey" />
+		<ul class="media-list">
+			<li class="media">
+				<a class="pull-left" href="/gender-gap/">
+					<img class="media-object" src="{{ "/assets/images/avatar.png" | relative_url }}" />
+				</a>
+				<div class="media-body">
+					<span class="h5">Gender Gap</span>
+					<p>Compare risk factors between males and females</p>
+				</div>
+			</li>
+			<li class="media">
+				<a class="pull-left" href="/municipality/">
+					<img class="media-object" src="{{ "/assets/images/map.png" | relative_url }}" />
+				</a>
+				<div class="media-body">
+					<span class="h5">Municipality</span>
+					<p>Explore risk behaviours across Durham Region</p>
+				</div>
+			</li>
+			<li class="media">
+				<a class="pull-left" href="/trend-over-time/">
+					<img class="media-object" src="{{ "/assets/images/graph.png" | relative_url }}" />
+				</a>
+				<div class="media-body">
+					<span class="h5">Trend Over Time</span>
+					<p>See how behaviours have changed over the years</p>
+				</div>
+			</li>
+		</ul>
 	</div>
 	<div class="col-md-5">
 		<img class="img-rounded img-responsive" src="{{ "/assets/images/rrfss.png" | relative_url }}" alt="RRFSS logo" />
