@@ -17,28 +17,28 @@ secondarymenu: "false"
 		<ul class="media-list">
 			<li class="media">
 				<a class="pull-left" href="/gender-gap/">
-					<img class="media-object" src="{{ "/assets/images/avatar.png" | relative_url }}" />
+					<img class="media-object" src="{{ "/assets/images/avatar.png" | relative_url }}" width="120px" />
 				</a>
 				<div class="media-body">
-					<span class="h5">Gender Gap</span>
+					<span class="h5 media-heading">Gender Gap</span>
 					<p>Compare risk factors between males and females</p>
 				</div>
 			</li>
 			<li class="media">
 				<a class="pull-left" href="/municipality/">
-					<img class="media-object" src="{{ "/assets/images/map.png" | relative_url }}" />
+					<img class="media-object" src="{{ "/assets/images/map.png" | relative_url }}" width="120px"/>
 				</a>
 				<div class="media-body">
-					<span class="h5">Municipality</span>
+					<span class="h5 media-heading">Municipality</span>
 					<p>Explore risk behaviours across Durham Region</p>
 				</div>
 			</li>
 			<li class="media">
 				<a class="pull-left" href="/trend-over-time/">
-					<img class="media-object" src="{{ "/assets/images/graph.png" | relative_url }}" />
+					<img class="media-object" src="{{ "/assets/images/graph.png" | relative_url }}" width="120px"/>
 				</a>
 				<div class="media-body">
-					<span class="h5">Trend Over Time</span>
+					<span class="h5 media-heading">Trend Over Time</span>
 					<p>See how behaviours have changed over the years</p>
 				</div>
 			</li>
