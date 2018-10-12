@@ -6,6 +6,7 @@ title: RRFSS Data Explorer
 description: Make data beautiful with Jekyll
 baseurl: "/RRFSS-data-explorer"
 url: "https://durhamregionharp.github.io"
+copyright_date: "2018"
 
 # User settings
 username: Durham Region HARP
