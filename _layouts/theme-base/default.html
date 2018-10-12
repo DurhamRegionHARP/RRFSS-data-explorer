@@ -67,6 +67,7 @@
 {% endif %}
 		<main role="main" property="mainContentOfPage" class="{% if page.secondarymenu == "true" %}col-md-9 col-md-push-3{% else %}container-fluid{% endif %}">
 			<h1 id="wb-cont" class="wb-inv" property="name">{{ page.title }}</h1>
+			<!-- Put some margin in here -->
 			{% include base/contentbuttons.html %}
 			{{ content }}
 {% if page.modified == null or page.modified == '' %}
