@@ -41,7 +41,7 @@ secondarymenu: "false"
 
         {% if row.subTitle %}<p>{{ row.subTitle }}</p>{% endif %}
         <div class="row">
-          <div class="col-md-5 column">
+          <div class="col-md-9 column">
             {% if row.dataType == 'Rate' or row.dataType == 'Count' %}
               {% include components/bar-rate.html row=row labels=labels %}{% else %}
               {% include components/bar.html row=row labels=labels %}

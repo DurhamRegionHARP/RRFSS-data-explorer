@@ -1,0 +1,14 @@
+{
+  "name": "RRFSS-data-explorer",
+  "version": "1.0.0",
+  "description": "Visualize RRFSS data with Jekyll and WET",
+  "main": "index.js",
+  "repository": "https://github.com/DurhamRegionHARP/RRFSS-data-explorer.git",
+  "author": "James Lane <lanejames35@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chartist": "^0.11.0",
+    "chartist-plugin-accessibility": "^0.0.5",
+    "chartist-plugin-tooltips": "^0.0.17"
+  }
+}
