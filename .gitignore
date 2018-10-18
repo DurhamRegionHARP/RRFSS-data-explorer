@@ -24,4 +24,3 @@ csslint.out.xml
 _site/*
 vendor/
 node_modules/*
-yarn.lock
