@@ -1113,7 +1113,7 @@ a {
     color: #0535d2;
     text-decoration: underline; }
   a:focus {
-    outline: 5px auto -webkit-focus-ring-color;
+    outline: 5px auto currentcolor;
     outline-offset: -2px; }
 
 figure {
@@ -10127,6 +10127,7 @@ details {
 #wb-sttl a {
   color: #fff;
   font-size: 1.9em;
+  font-weight: 700;
   line-height: normal;
   text-decoration: none;
   text-shadow: 1px 1px 1px #333; }
@@ -10204,7 +10205,8 @@ main {
 
 #wb-sm .menu > li > a:hover, #wb-sm .menu > li.active > a {
   background: #113c8d;
-  color: #fff; }
+  color: #fff;
+  font-weight: 700; }
 
 #wb-sm {
   background: #6a94f3;
@@ -10212,7 +10214,8 @@ main {
   #wb-sm .menu {
     margin-bottom: 0; }
     #wb-sm .menu > li > a {
-      color: #333; }
+      color: #333;
+	  font-weight: 700; }
   #wb-sm .sm.open {
     background: #ccc;
     border-bottom: 5px solid #243850;
