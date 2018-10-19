@@ -12,54 +12,11 @@
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  *
  */
-/*Banner*/
-/*Dark Cerulean*/
-/*Lochmara, Dark Cerulean*/
-/*Charcoal*/
-/*White*/
-/*White*/
-/*Gray*/
-/*White*/
-/*Charcoal*/
-/*White*/
-/*Night Rider*/
-/*Language-bar*/
-/*Very Light Grey*/
-/*Main Element*/
-/*Whisper*/
-/*Site menu*/
-/*Blue Whale*/
-/*White*/
-/*Very Light Grey*/
-/*Very Light Grey*/
-/*Black*/
-/*Dim Gray*/
-/*Nobel*/
-/*Nobel*/
-/*Very Light Grey*/
-/*Catalina Blue*/
-/*Charcoal*/
-/*Silver*/
-/*Dim Gray*/
-/*Black Pearl*/
-/*White*/
-/*Link Water*/
-/*Venice Blue*/
-/*Tangaroa*/
-/*Secondary menu*/
-/*Gainsboro*/
-/*Dim Gray*/
-/*Night Rider*/
-/*Skip-links*/
-/*Black*/
-/*White*/
-/*White*/
 /*
- * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
- * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+ * Import fonts from Google Fonts
  */
-/*
- * HOW TO USE THIS FILE
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700');
+/* HOW TO USE THIS FILE
  * Use this file to override Bootstrap variables and WET custom variables.
  * If there is a Bootstrap variable not shown here that you want to override, go to "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables" to view the variables that you can override. Simply copy and paste the variable and its applicable section (if applicable) from the Bootstrap file into this override file and override the variables as applicable.
  */
@@ -1135,7 +1092,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 16px;
   line-height: 1.4375;
   color: #333333;
