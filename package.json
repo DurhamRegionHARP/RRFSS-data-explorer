@@ -10,5 +10,8 @@
     "chartist": "^0.11.0",
     "chartist-plugin-accessibility": "^0.0.5",
     "chartist-plugin-tooltips": "^0.0.17"
+  },
+  "devDependencies": {
+    "webpack": "^4.20.2"
   }
 }
