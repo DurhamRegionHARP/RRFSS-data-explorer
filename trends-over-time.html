@@ -41,7 +41,7 @@ secondarymenu: "false"
 
         {% if row.subTitle %}<p>{{ row.subTitle }}</p>{% endif %}
         <div class="row">
-          <div class="col-md-9 column">
+          <div class="col-md-8 column">
             {% if row.dataType == 'Rate' or row.dataType == 'Count' %}
               {% include components/line-rate.html row=row labels=labels %}{% else %}
               {% include components/line.html row=row labels=labels %}
@@ -49,21 +49,23 @@ secondarymenu: "false"
           </div>
 
           <!-- Sidebar-->
-          <div class="col-md-3 column end well">
+          <div class="col-md-3 column end">
+			<div class="well">
             <aside class="related plm-mu">
               <!-- Description of indicator & comments -->
-                {% if row.description %}<span class="source"><strong>Description: </strong></span>
+                {% if row.description %}<span class="h5">Description:</span>
                   <span class="description">{{ row.description | replace: "<", "&lt;" | markdownify }}</span>{% endif %}
-                {% if row.chartComment or row.Note %}<span class="source"><strong>Note: </strong></span><br> {% endif %}
-                {% if row.chartComment %}  <p class="source">{{ row.chartComment }}</p>{% endif %}
-                {% if row.Note %} <p class="source">{{ row.Note }}</p>{% endif %}
+                {% if row.chartComment or row.Note %}<span class="h5">Note:</span><br> {% endif %}
+                {% if row.chartComment %}  <p>{{ row.chartComment }}</p>{% endif %}
+                {% if row.Note %} <p>{{ row.Note }}</p>{% endif %}
                   <!-- Data source(s) -->
-              {% if row.dataSource %}<span class="source"><strong>Source: </strong></span><br>
-                <span class="source">{{ row.dataSource | markdownify | remove: '<p>' | remove: '</p>' }} | {{ row.dataSourceYear }}</span>
+              {% if row.dataSource %}<span class="h5">Source:</span><br>
+                <span>{{ row.dataSource | markdownify | remove: '<p>' | remove: '</p>' }} | {{ row.dataSourceYear }}</span>
               {% endif %}
 <!--              <input type="button" id="share-button" class="button" value="Image">-->
 
             </aside>
+			</div>
           </div>
         </div>
         <!-- End of each chart section with BACK TO TOP link -->

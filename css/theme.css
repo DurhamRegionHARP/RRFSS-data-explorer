@@ -223,8 +223,8 @@ th {
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
   *,
-  *:before,
-  *:after {
+  *::before,
+  *::after {
     background: transparent !important;
     color: #000 !important;
     -webkit-box-shadow: none !important;
@@ -1082,8 +1082,8 @@ th {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-*:before,
-*:after {
+*::before,
+*::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
@@ -1105,6 +1105,18 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit; }
+  
+select{
+  width: 100%;
+  padding: 5px;
+  border: 2px solid #986b24;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32" height="24" viewBox="0 0 32 24"><polygon points="0,0 32,0 16,24" style="fill: rgb%2851, 51, 51%29"></polygon></svg>');
+  background-size: 9px 6px;
+  background-position: right center;
+  background-origin: content-box;
+  background-repeat: no-repeat;}
 
 a {
   color: #295376;
@@ -2299,7 +2311,7 @@ legend {
   border-bottom: 1px solid #e5e5e5; }
 
 label {
-  display: inline-block;
+  display: block;
   max-width: 100%;
   margin-bottom: 5px;
   font-weight: bold; }
@@ -5634,11 +5646,11 @@ button.close {
   .carousel-indicators {
     bottom: 20px; } }
 
-.clearfix:before, .clearfix:after {
+.clearfix::before, .clearfix::after {
   content: " ";
   display: table; }
 
-.clearfix:after {
+.clearfix::after {
   clear: both; }
 
 .center-block {
