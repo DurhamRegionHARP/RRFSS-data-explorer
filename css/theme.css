@@ -4554,19 +4554,6 @@ a.thumbnail.active {
 .media-list {
   padding-left: 0;
   list-style: none; }
-/*
- *  Hover transition
- */
- .media a.fade{
-	opacity: 1;
-	transition: opacity 0.2s ease-in-out;
-	-moz-transition: opacity 0.2s ease-in-out;
-	-webkit-transition: opacity 0.2s ease-in-out;}
- .media a.fade:hover{
-	opacity: 0.6;
-	transition: opacity 0.2s ease-in-out;
-	-moz-transition: opacity 0.2s ease-in-out;
-	-webkit-transition: opacity 0.2s ease-in-out;}
 	
 .list-group {
   margin-bottom: 20px;
@@ -10363,6 +10350,12 @@ main {
 #wb-info {
 	background: #333;
 	color: #fff; }
+#social a{
+    color: #fff;
+	text-decoration: none;}
+	#social a:hover{
+	    color: #6a94f3;
+	}
 #social span{
 	font-size: 2.5em;}
 /*

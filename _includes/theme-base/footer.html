@@ -1,11 +1,27 @@
 <div class="col-sm-6 col-sm-offset-3">
 	<div class="text-center">
 		<h3 class="wb-inv">{{ site.data.i18n-base[page.language].tmpl-about }}</h3>
-		<p class="mrgn-tp-sm">&copy; {{ site.copyright_date }} Health Analytics, Research & Policy Team</a>.
+		<p class="mrgn-tp-sm">&copy; {{ site.copyright_date }} Health Analytics, Research &amp; Policy Team</a>.
 		<ul id="social" class="list-inline">
-			<li><span class="fab fa-facebook"></span></li>
-			<li><span class="fab fa-twitter"></span></li>
-			<li><span class="fab fa-github"></span></li>
+			<li>
+			  <a href="https://facebook.com/{{ site.facebook_username }}">
+			    <span class="wb-inv">Click to visit our Facebook page</span>
+			    <span class="fab fa-facebook"></span>
+			  </a>
+			</li>
+			<li>
+		      <a href="https://facebook.com/{{ site.twitter_username }}">
+			    <span class="wb-inv">Click to visit our Twitter page</span>
+			    <span class="fab fa-twitter"></span>
+			  </a>
+			
+			</li>
+			<li>
+			  <a href="https://facebook.com/{{ site.github_username }}">
+			    <span class="wb-inv">Click to visit our Github page</span>
+			    <span class="fab fa-github"></span>
+			  </a>
+			</li>
 		</ul>
 		<p>Powered by <a href="https://jekyllrb.com/">Jekyll</a> and <a href="http://wet-boew.github.io/wet-boew/index-en.html">WET</a></p>
 	</div>
