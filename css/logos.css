@@ -1,0 +1,23 @@
+@charset "utf-8";
+/*
+ * Image sizing for the brand banner
+ *
+ */
+#wb-sttl #durham{
+  height: 4em;
+  width: 3em;}
+#wb-sttl #rrfss{
+  height: 4em;
+  width: 6em;}
+/* Small view and under */
+@media screen and (max-width: 991px){
+  #wb-sttl #durham{
+    height: 3em;
+    width: 2em;
+    margin: 5px 7.5px 5px 0;
+    position: relative;}
+  #wb-sttl #rrfss{
+    height: 3em;
+    width: 5m;
+    margin: 5px 7.5px 5px 0;
+    position: relative;} }
