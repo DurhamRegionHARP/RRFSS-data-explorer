@@ -10069,14 +10069,17 @@ details {
 .wb-sppe img,
 .wb-sppe object {
   width: 100%; }
-
+  
+#wb-bnr{
+  background:#113c8d;}
+  
 #wb-bar {
   background: #113c9d;
   border-bottom: 1px solid #fff;
   color: #fff;
   min-height: 2.2em;
   z-index: 1; }
-
+  
 #wb-lng ul,
 #wb-glb-mn .pnl-btn {
   float: right;
