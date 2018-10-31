@@ -1,0 +1,9 @@
+@charset "utf-8";
+/*
+ * Image sizing for the brand banner
+ *
+ */
+/* Small view and under */
+@media screen and (max-width: 991px){
+  #wb-sttl #rrfss{
+  left: 3em;} }

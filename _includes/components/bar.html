@@ -1,5 +1,5 @@
 {% assign id = include.row.Indicator | slugify %}
-{% if page.title == 'Top 10 Cities' %}
+{% if page.title == 'Municipality' %}
 <div id="chart-{{ id }}" class="ct-chart ct-major-seventh"></div>{% else %}
 <div id="chart-{{ id }}" class="ct-chart ct-major-eleventh"></div>
 {% endif %}
@@ -25,22 +25,16 @@
       chartPadding: {
           right: 60
       },
-      // onlyInteger: true,
       horizontalBars: true,
-      // scaleMinSpace: 30,
-      // seriesBarDistance: 15,
       axisY: {
         showGrid: false,
-        offset: 120,
-        // scaleMinSpace: 10,
-        // seriesBarDistance: 35
+        offset: 80,
       },
       axisX: {
         offset: 20,
+        scaleMinSpace: 50,
         labelInterpolationFnc: function (value) {
-          // do whatever math operation you want here
           return Math.round(value * 100) + '%';
-            // return value;
         }
       },
       plugins: [
@@ -60,24 +54,15 @@
     }
     var responsiveOpts = [
       ['screen and (min-width: 451px) and (max-width: 1024px)', {
-        seriesBarDistance: 10 //,
-        // axisX: {
-        //   labelInterpolationFnc: function (value) {
-        //     return value;
-        //   }
-        // }
+        seriesBarDistance: 10
       }],
       ['screen and (max-width: 450px)', {
         seriesBarDistance: 90,
-        // scaleMinSpace: 40//,
         chartPadding: {
             right: 30
         },
         axisY: {
           scaleMinSpace: 15
-        //   labelInterpolationFnc: function (value) {
-        //     return value[0];
-        //   }
         }
       }]
     ]

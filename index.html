@@ -13,55 +13,86 @@ breadcrumb: "false"
 secondarymenu: "false"
 ---
 <div class="row mrgn-tp-lg">
-	<div class="col-md-7">
-		<ul class="media-list">
-			<li class="media">
-				<a class="pull-left fade" href="{{ site.baseurl }}/gender-gap/">
-					<img class="media-object" src="{{ "/assets/images/avatar.png" | relative_url }}" />
+    <div class="col-md-12">
+		<div class="col-md-2">
+			<div class="card">
+				<a class="fade" href="{{ site.baseurl }}/age-spread/">
+					<img class="card-image img-responsive" alt="Avatars of different ages" src="{{ "/assets/images/ages.svg" | relative_url }}" />
 				</a>
-				<div class="media-body">
-					<span class="h5 media-heading">Gender Gap</span>
-					<p>Compare risk factors between males and females</p>
+				<div class="card-container">
+					<span class="h5">Age Spread</span>
+					<p>View differences in risk factors across age groups</p>
 				</div>
-			</li>
-			<li class="media">
-				<a class="pull-left fade" href="{{ site.baseurl }}/municipality/">
-					<img class="media-object" src="{{ "/assets/images/map.png" | relative_url }}" />
+			</div>
+		</div>
+		<div class="col-md-2">
+			<div class="card">
+				<a class="fade" href="{{ site.baseurl }}/gender-gap/">
+					<img class="card-image img-responsive" alt="Male and female avatars" src="{{ "/assets/images/avatar.svg" | relative_url }}" />
 				</a>
-				<div class="media-body">
-					<span class="h5 media-heading">Municipality</span>
-					<p>Explore risk behaviours across Durham Region</p>
+				<div class="card-container">
+						<span class="h5">Gender Gap</span>
+						<p>Compare risk factors between males and females</p>
 				</div>
-			</li>
-			<li class="media">
-				<a class="pull-left fade" href="{{ site.baseurl }}/trends-over-time/">
-					<img class="media-object" src="{{ "/assets/images/graph.png" | relative_url }}" />
+			</div>
+		</div>
+		<div class="col-md-2">
+			<div class="card">
+				<a class="fade" href="{{ site.baseurl }}/income-divide/">
+					<img class="card-image img-responsive" alt="Front and back of a credit card" src="{{ "/assets/images/creditCard.svg" | relative_url }}" />
 				</a>
-				<div class="media-body">
-					<span class="h5 media-heading">Trend Over Time</span>
-					<p>See how behaviours have changed over the years</p>
+				<div class="card-container">
+						<span class="h5">Income divide</span>
+						<p>Explore the affect of income on health behaviour</p>
 				</div>
-			</li>
-		</ul>
-	</div>
-	<div class="col-md-5">
-		<img class="img-rounded img-responsive" src="{{ "/assets/images/rrfss.png" | relative_url }}" alt="RRFSS logo" />
-		{% capture about_rrfss %}{% include about.md %}{% endcapture %}
-		{{ about_rrfss | markdownify }}
+			</div>
+		</div>
+    <div class="col-md-2">
+      <div class="card">
+        <a class="fade" href="{{ site.baseurl}}/municipality/">
+          <img class="card-image img-responsive" alt="Sun shining on skyscrapers" src="{{ "/assets/images/map.svg" | relative_url}}" />
+        </a>
+        <div class="card-container">
+          <span class="h5">Municipality</span>
+          <p>Look a risk factors across Durham Region</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="card">
+        <a class="fade" href="{{ site.baseurl }}/trends-over-time/">
+          <img class="card-image img-responsive" alt="Pie, bar and line graphs" src="{{ "/assets/images/graph.svg" | relative_url}}" />
+        </a>
+        <div class="card-container">
+          <span class="h5">Trend Over Time</span>
+          <p>See how behaviours have changed over the years</p>
+        </div>
+      </div>
+    </div>
 	</div>
 </div>
 <div class="row">
-	<div class="col-md-8">
-		<h2>About the Health Analytics, Research and Policy Team</h2>
-		<p>Here's a little blurb about our team. Lorem ipsum dolor sit amet consectetur adipiscing elit nunc montes, ad sociis vulputate porttitor venenatis praesent pulvinar congue aliquet morbi, quis sollicitudin molestie porta eu tristique gravida tempor. Odio nec penatibus tellus vehicula suscipit natoque hac enim molestie, mattis sem arcu scelerisque sapien in ac erat faucibus condimentum, ridiculus lectus aenean nullam phasellus fermentum est dignissim.</p>
+    <div class="col-md-12">
+	    <div class="col-md-8">
+		    {% capture about_rrfss %}{% include about.md %}{% endcapture %}
+		    {{ about_rrfss | markdownify }}
+	    </div>
 	</div>
-	<div class="col-md-4">
-		<h2>About the application</h2>
-		<p>This is an open source project that uses Jekyll, WET and Chartist.js.</p>
-		<ul class="list-unstyled">
-			<li class="mrgn-bttm-sm"><a class="btn btn-primary" href="https://github.com/DurhamRegionHARP/RRFSS-data-explorer">Send Feedback <span class="far fa-comment"></span></a></li>
-			<li class="mrgn-bttm-sm"><a class="btn btn-primary" href="https://github.com/DurhamRegionHARP/RRFSS-data-explorer">View Code <span class="fas fa-laptop-code"></span></a></li>
-			<li class="mrgn-bttm-sm"><a class="btn btn-primary" href="https://github.com/DurhamRegionHARP/RRFSS-data-explorer">Download Data <span class="fas fa-list-ol"></span></a></li>
-		</ul>
+</div>
+<div class="row">
+    <div class="col-md-12">
+		<div class="col-md-8">
+			<h2>About the Health Analytics, Research and Policy Team</h2>
+			<p>Here's a little blurb about our team. Lorem ipsum dolor sit amet consectetur adipiscing elit nunc montes, ad sociis vulputate porttitor venenatis praesent pulvinar congue aliquet morbi, quis sollicitudin molestie porta eu tristique gravida tempor. Odio nec penatibus tellus vehicula suscipit natoque hac enim molestie, mattis sem arcu scelerisque sapien in ac erat faucibus condimentum, ridiculus lectus aenean nullam phasellus fermentum est dignissim.</p>
+		</div>
+		<div class="col-md-4">
+			<h2>About the application</h2>
+			<p>This is an open source project that uses Jekyll, WET and Chartist.js.</p>
+			<ul class="list-unstyled">
+				<li class="mrgn-bttm-sm"><a class="btn btn-primary" href="https://github.com/DurhamRegionHARP/RRFSS-data-explorer">Send Feedback <span class="far fa-comment"></span></a></li>
+				<li class="mrgn-bttm-sm"><a class="btn btn-primary" href="https://github.com/DurhamRegionHARP/RRFSS-data-explorer">View Code <span class="fas fa-laptop-code"></span></a></li>
+				<li class="mrgn-bttm-sm"><a class="btn btn-primary" href="https://github.com/DurhamRegionHARP/RRFSS-data-explorer">Download Data <span class="fas fa-list-ol"></span></a></li>
+			</ul>
+		</div>
 	</div>
 </div>

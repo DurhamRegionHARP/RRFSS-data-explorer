@@ -30,26 +30,30 @@
 		</ul>
 		<header role="banner">
 			<div id="wb-bnr">
-				<div id="wb-bar">
-					<div class="container-fluid">
-						<div class="row">
-							<div id="wb-sttl" class="col-md-8">
-							{% include theme-base/brand.html %}
-							</div>	
+				<div id="wb-bar visible-xs">
+          <div class="container-fluid">
+            <div class="row">
 {% unless page.mobimenu == "false" %}
 							<section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
 								<h2>{{ site.data.i18n-base[page.language].srch-menus }}</h2>
 								{% include base/mobimenu.html %}
 							</section>
-{% endunless %}
-						</div>
+{% endunless %}              
+            </div>
+          </div>
+        </div>
+			  <div class="container-fluid">
+				  <div class="row">
+					  <div id="wb-sttl" class="col-md-8">
+							{% include theme-base/brand.html %}
+						</div>	
 					</div>
 				</div>
 			</div>
 {% if page.sitemenu == "false" %}
 			<span data-trgt="mb-pnl" class="wb-menu hide"></span>
 {% else %}
-			<nav role="navigation" id="wb-sm" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+			<nav role="navigation" id="wb-sm" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement" data-trgt="mb-pnl">
 				{% include base/sitemenu.html %}
 			</nav>
 {% endif %}
