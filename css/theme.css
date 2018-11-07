@@ -10363,15 +10363,15 @@ main {
 /*
  Footer
  */
-#wb-info {
+.nav-footer {
 	background: #333;
 	color: #fff; }
-#wb-info a{
+.nav-footer a{
   color: #fff;
 	text-decoration: none;}
-	#wb-info a:hover{
+	.nav-footer a:hover{
 	  color: #6a94f3; }
-#wb-info span{
+.nav-footer span{
 	font-size: 2.5em; }
 /*
  Views

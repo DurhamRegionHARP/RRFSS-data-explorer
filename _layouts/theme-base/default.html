@@ -89,12 +89,22 @@
 {% endif %}
 
 {% unless page.footer == "false" %}
-		<footer role="contentinfo" id="wb-info" class="visible-xs visible-sm visible-md visible-lg wb-navcurr">
+		<footer role="contentinfo" class="nav-footer">
 			<div class="container-fluid">
-				<nav role="navigation" class="row">
-					<h2>{{ site.data.i18n-base[page.language].tmpl-about-site }}</h2>
-					{% include theme-base/footer.html %}
-				</nav>
+        <div class="row">
+          <div id="wb-info" class="col-sm-6 col-sm-offset-3 text-center">
+            <p class="mrgn-tp-sm">&copy; {{ site.copyright_date }} Health Analytics, Research &amp; Policy Team</a>.
+            <nav role="navigation" class="wb-navcurr">
+              <h2>{{ site.data.i18n-base[page.language].tmpl-about-site }}</h2>
+              {% include theme-base/footer.html %}
+            </nav>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3">
+            {% include theme-base/social.html %}
+          </div>
+        </div>
 			</div>
 		</footer>
 {% endunless %}
