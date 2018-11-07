@@ -10204,7 +10204,7 @@ main {
 #wb-sm .sm.open li summary:hover,
 #wb-sm .sm.open li summary:focus {
   background: #113c8d;
-  color: #333; }
+  color: #fff; }
 
 #wb-sm .menu > li > a:hover, #wb-sm .menu > li.active > a {
   background: #113c8d;
@@ -10366,14 +10366,13 @@ main {
 #wb-info {
 	background: #333;
 	color: #fff; }
-#social a{
-    color: #fff;
+#wb-info a{
+  color: #fff;
 	text-decoration: none;}
-	#social a:hover{
-	    color: #6a94f3;
-	}
-#social span{
-	font-size: 2.5em;}
+	#wb-info a:hover{
+	  color: #6a94f3; }
+#wb-info span{
+	font-size: 2.5em; }
 /*
  Views
  */
