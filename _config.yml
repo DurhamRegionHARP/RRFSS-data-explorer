@@ -19,3 +19,9 @@ github_username: DurhamRegionHARP
 
 # Build settings
 markdown: kramdown
+
+# Prose configuration
+# Set ignore parameter to limit access to files we don't want available to edit
+prose:
+  rooturl: "_data"
+  ignore: ['/css','/assests','/script','/theme_base','/','*.yml','*.html']
