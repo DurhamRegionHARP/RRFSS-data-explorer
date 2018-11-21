@@ -32,4 +32,5 @@ The RRFSS Data Explorer is a tool that let’s you explore data on health behavi
 ## Sounds cool! How do I get more information?
 
 We welcome all discussion through the [issues tracker](https://github.com/DurhamRegionHARP/RRFSS-data-explorer/issues) of this repository.
+
 In addition, you can reach us on Twitter [@DurhamEpis](https://twitter.com/DurhamEpis).
