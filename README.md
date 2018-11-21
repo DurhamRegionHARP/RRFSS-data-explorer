@@ -1,8 +1,8 @@
 # RRFSS Data Explorer
 
-Host, edit, and visualize CSV data using ![Jekyll](https://jekyllrb.com) and ![Chartist.js](https://gionkunz.github.io/chartist-js/).
+Host, edit, and visualize CSV data using [Jekyll](https://jekyllrb.com) and [Chartist.js](https://gionkunz.github.io/chartist-js/).
 
-This application uses the City of Philadelphia ![Community Health Explorer](https://healthexplorer.phila.gov) and the ![Web Experience Toolkit](https://wet-boew.github.io)(WET-BOEW) as a framework. We appreciate the combined effort of the contributors to each of these projects. :clap: :simley:
+This application uses the City of Philadelphia [Community Health Explorer](https://healthexplorer.phila.gov) and the [Web Experience Toolkit](https://wet-boew.github.io) (WET-BOEW) as a framework. We appreciate the combined effort of the contributors to each of these projects. :clap: :smiley:
 
 ## What is it?
 
@@ -10,14 +10,26 @@ The RRFSS Data Explorer is a tool that let’s you explore data on health behavi
 
 ## What are the features?
 
-* **Responsive** design adapts any size device (a challenge for many dashboard tools :triumph:)
-* **Version control** allows for updates without having to _re-upload_ anything and can be rolled back!
-* **Secure** access to the source from anywhere on the web
-* **Cost-efficient** to operate, as the data and application are hosted on GitHub for **free**
-* **Accessible** framework with the charting library chosen for its accesssiblity features
-* **Extensible** template that can be extended without the need for an IT password! 
+* **Responsive** design adapts any size device (a challenge for many dashboard tools :triumph:).
+* **Version control** allows for updates without having to _re-upload_ anything; can be rolled back!
+* **Secure** access to the source from anywhere on the web.
+* **Cost-efficient** to operate, as the data and application are hosted on GitHub for **free**.
+* **Accessible** framework with the charting library chosen for its accesssiblity features.
+* **Extensible** template where features can be added or removed without the need for an administrator password! 
 * **Application free** as there's nothing to download. There's no worring about changes to terms of service or privacy policies!
-* **Deep linking**  to each chart for easy sharing on social media and allows rich website analytics
-* **Fully open source** for all to use and re-mix to suit their project
+* **Deep linking**  to each chart for easy sharing on social media and rich website analytics.
+* **Fully open source** for all to use and re-mix to suit their project.
 
-## How does it work
+## How does data access and maintenance work?
+
+1. Sign up for a [GitHub](https://github.com) account
+2. Have yourself added to the DataUsers team to grant commit access to this repository
+3. Login to [prose.io](https://prose.io) via your GitHub account and select this repository
+4. Naviate to the correct `.csv` file and make edits
+5. Click the `Save` icon
+6. Your changes will be committed and the application should be updated within minutes
+
+## Sounds cool! How do I get more information?
+
+We welcome all discussion through the [issues tracker](https://github.com/DurhamRegionHARP/RRFSS-data-explorer/issues) of this repository.
+In addition, you can reach us on Twitter [@DurhamEpis](https://twitter.com/DurhamEpis).
