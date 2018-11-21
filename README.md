@@ -10,7 +10,7 @@ The RRFSS Data Explorer is a tool that let’s you explore data on health behavi
 
 ## What are the features?
 
-* **Responsive** design adapts any size device (a challenge for many dashboard tools :triumph:).
+* **Responsive** design adapts any size device (a challenge for many dashboard tools :weary:).
 * **Version control** allows for updates without having to _re-upload_ anything; can be rolled back!
 * **Secure** access to the source from anywhere on the web.
 * **Cost-efficient** to operate, as the data and application are hosted on GitHub for **free**.
