@@ -23,7 +23,7 @@ The RRFSS Data Explorer is a tool that let’s you explore data on health behavi
 ## How does data access and maintenance work?
 
 1. Sign up for a [GitHub](https://github.com) account
-2. Have yourself added to the DataUsers team to grant commit access to this repository
+2. Have yourself added to the [DataUsers](https://github.com/orgs/DurhamRegionHARP/teams/datausers) team to grant commit access to this repository
 3. Login to [prose.io](https://prose.io) via your GitHub account and select this repository
 4. Naviate to the correct `.csv` file and make edits
 5. Click the `Save` icon
