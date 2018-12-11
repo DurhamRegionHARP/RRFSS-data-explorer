@@ -4,7 +4,7 @@ title: Gender gap
 permalink: /gender-gap/
 language: en
 altLangPrefix: index
-dateModified: "2018-13-10"
+dateModified: "2018-11-12"
 description: "Showcase RRFSS results with Jekyll and WET"
 languagetoggle: "false"
 sitesearch: "false"
@@ -13,8 +13,8 @@ secondarymenu: "false"
 --- 
 <div class="row chart-section">
   <div class="col-md-12 column">
-    {% assign categories = site.data.racial_disparity | group_by: 'Category' %}
-    {% assign labels = site.data.racial_disparity_labels %}
+    {% assign categories = site.data.gender_gap | group_by: 'Category' %}
+    {% assign labels = site.data.gender_gap_labels %}
 
     <!-- Dropdown to select category-->
     <div class="category-selector col-sm-12 column ptm pbs">

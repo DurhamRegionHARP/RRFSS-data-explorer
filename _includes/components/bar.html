@@ -3,8 +3,6 @@
 <div id="chart-{{ id }}" class="ct-chart ct-major-seventh"></div>{% else %}
 <div id="chart-{{ id }}" class="ct-chart ct-major-eleventh"></div>
 {% endif %}
-<!--for debugging-->
-<!--{{ include.row | jsonify}}-->
 
 <script>
   (function () {
@@ -15,6 +13,12 @@
     // Construct array of objects from data using indicators
     var series = labels.map(function (col) {
       return row[col] || null
+    })
+    var upper = labels.map(function (col) {
+      return row[col + 'ucl'] || null
+    })
+    var lower = labels.map(function (col) {
+      return row[col + 'lcl'] || null
     })
     var chartData = {
       labels: labels,
@@ -49,6 +53,13 @@
           seriesHeader: 'dimension',
           summary: {{ row.description | jsonify }},
           valueTransform: Chartist.noop
+        }),
+        Chartist.plugins.errorBars({
+          horizontal: true,
+          confidenceLimit: {
+            upper: [upper],
+            lower: [lower]
+          }
         })
       ]
     }

@@ -542,6 +542,13 @@ chalk@^1.0.0:
     strip-ansi "^3.0.0"
     supports-color "^2.0.0"
 
+chartist-error-bars@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/chartist-error-bars/-/chartist-error-bars-0.0.4.tgz#7b5490fe0d08b5df1a90b6d0dc5862423b1173a8"
+  integrity sha512-1GGClKy22LTSjxCJ8yGzO0TVVLM0Xoxj0Yy+pMWy5kauymoiV5KzFLtPht8EBXBxWtVs2KqDqL5bAIdv2F2KBw==
+  dependencies:
+    chartist "^0.11.0"
+
 chartist-plugin-accessibility@^0.0.5:
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/chartist-plugin-accessibility/-/chartist-plugin-accessibility-0.0.5.tgz#0d9883cff4b8c0cc4ca547c81ecaed31480c3d20"

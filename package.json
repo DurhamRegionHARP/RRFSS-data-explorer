@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "chartist": "^0.11.0",
+    "chartist-error-bars": "^0.0.4",
     "chartist-plugin-accessibility": "^0.0.5",
     "chartist-plugin-tooltips": "^0.0.17"
   },
