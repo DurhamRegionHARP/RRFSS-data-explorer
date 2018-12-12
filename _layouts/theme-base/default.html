@@ -34,7 +34,7 @@
           <div class="container-fluid">
             <div class="row">
 {% unless page.mobimenu == "false" %}
-							<section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
+							<section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn" aria-label="Open mobile menu">
 								<h2>{{ site.data.i18n-base[page.language].srch-menus }}</h2>
 								{% include base/mobimenu.html %}
 							</section>
@@ -53,7 +53,7 @@
 {% if page.sitemenu == "false" %}
 			<span data-trgt="mb-pnl" class="wb-menu hide"></span>
 {% else %}
-			<nav role="navigation" id="wb-sm" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement" data-trgt="mb-pnl">
+			<nav role="navigation" id="wb-sm" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement" data-trgt="mb-pnl" aria-labelledby="st-nav-name">
 				{% include base/sitemenu.html %}
 			</nav>
 {% endif %}
@@ -94,8 +94,8 @@
         <div class="row">
           <div id="wb-info" class="col-sm-6 col-sm-offset-3 text-center">
             <p class="mrgn-tp-sm">&copy; {{ site.copyright_date }} Health Analytics, Research &amp; Policy Team</a>.
-            <nav role="navigation" class="wb-navcurr">
-              <h2>{{ site.data.i18n-base[page.language].tmpl-about-site }}</h2>
+            <nav role="navigation" class="wb-navcurr" aria-labelledby="ft-nav-name">
+              <h2 id="ft-nav-name">{{ site.data.i18n-base[page.language].tmpl-about-site }}</h2>
               {% include theme-base/footer.html %}
             </nav>
           </div>
