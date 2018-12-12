@@ -9570,8 +9570,9 @@ main {
 .nav-footer a{
   color: #fff;
 	text-decoration: none;}
-	.nav-footer a:hover{
-	  color: #6a94f3; }
+	.nav-footer p a:hover{
+	  color: #6a94f3;
+    text-decoration: underline;}
 .nav-footer span{
 	font-size: 2.5em; }
 /*
