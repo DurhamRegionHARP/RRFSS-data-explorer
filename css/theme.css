@@ -9418,7 +9418,7 @@ main {
   #wb-sm .menu {
     margin-bottom: 0; }
     #wb-sm .menu > li > a {
-      color: #333;
+      color: #000;
 	  font-weight: 700; }
   #wb-sm .sm.open {
     background: #ccc;
