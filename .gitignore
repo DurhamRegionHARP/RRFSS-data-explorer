@@ -6,6 +6,7 @@ dist/*
 build/lib/vendors*
 build/lib/jruby-compiled
 _notes/
+css/*.css
 
 # OS generated files #
 .DS_Store
