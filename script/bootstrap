@@ -1,4 +1,0 @@
-#!/bin/sh
-
-echo "Installing dependencies"
-bundle install

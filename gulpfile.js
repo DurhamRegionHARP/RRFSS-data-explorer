@@ -1,17 +1,24 @@
-var gulp = require("gulp");
-var concat = require("gulp-concat");
-var uglifycss = require("gulp-uglifycss");
+const { src, dest, series } = require('gulp');
+const concat = require('gulp-concat');
+const uglifycss = require('gulp-uglifycss');
+const uglifyjs = require('gulp-uglify');
+const rename = require('gulp-rename');
 
-gulp.task('join', function() {
-  return gulp.src(['./css/theme.css', './css/logos.css', './css/cards.css'])
-              .pipe(concat('styles.css'))
-              .pipe(gulp.dest('./css/'));
-});
-gulp.task('css', function () {
-  return gulp.src('./css/styles.css')
-              .pipe(uglifycss({
-                "uglyComments": false
-              }))
-              .pipe(gulp.dest('./css/dist/'));
-});
-gulp.task('default', ['join', 'css']);
+function css(){
+  return src(['css/deps/*.css', './css/theme.css', './css/logos.css', './css/cards.css'])
+         .pipe(concat('styles.css'))
+         .pipe(uglifycss({ "uglyComments": true }))
+         .pipe(rename({ extname: '.min.css' }))
+         .pipe(dest('css/dist/'));
+}
+
+function js(){
+  return src(['script/chartist.js', 'script/chartist-*'])
+         .pipe(concat('bundle.js'))
+         .pipe(uglifyjs())
+         .pipe(rename({ extname: '.min.js' }))
+         .pipe(dest('script/dist/'));
+         
+}
+
+exports.build = series(css, js);
