@@ -19,6 +19,17 @@ github_username: DurhamRegionHARP
 
 # Build settings
 markdown: kramdown
+exclude: ['gulpfile.js',
+  'package.json',
+  'params.json',
+  '.travis.yml',
+  '.editorconfig',
+  '.gitattributes',
+  '.gitignore',
+  'Rakefile',
+  'yarn-error.log',
+  'yarn.lock',
+  'node_modules']
 
 # Prose configuration
 # Set ignore parameter to limit access to files we don't want available to edit

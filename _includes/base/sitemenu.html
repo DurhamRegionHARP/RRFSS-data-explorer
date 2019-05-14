@@ -1,18 +1,10 @@
 <div class="container-fluid nvbar">
 	<h2 id="st-nav-name">{{ site.data.i18n-base[page.language].tmpl-topics-menu }}</h2>
-    <div class="row">
+    <div class="row flex">
         <ul class="list-inline menu">
-{% if page.altMenu == null or page.altMenu == '' %}
-			<li><a href="{{ site.baseurl }}/age-spread/">Age Spread</a></li>
-      <li><a href="{{ site.baseurl }}/gender-gap/">Gender Gap</a></li>
-			<li><a href="{{ site.baseurl }}/income-divide/">Income Divide</a></li>
-      <li><a href="{{ site.baseurl }}/municipality/">Municipality</a></li>     
-      <li><a href="{{ site.baseurl }}/trends-over-time/">Tends Over Time</a></li>
-{% else %}
-			<li><a href="#">{{ site.data.i18n-base[page.language].tmpl-section }}{{ site.data.i18n-base[page.language].space }}1</a></li>
-			<li><a href="#">{{ site.data.i18n-base[page.language].tmpl-section }}{{ site.data.i18n-base[page.language].space }}2</a></li>
-			<li><a href="#">{{ site.data.i18n-base[page.language].tmpl-section }}{{ site.data.i18n-base[page.language].space }}3</a></li>
-{% endif %}
+			<li><a href="#">Link text</a></li>
+			<li><a href="#">Link text</a></li>
+			<li><a href="#">LInk text</a></li>
         </ul>
     </div>
 </div>
