@@ -7,6 +7,8 @@ build/lib/vendors*
 build/lib/jruby-compiled
 _notes/
 css/*.css
+css/deps/*
+script/*.js
 # keep build tools off the website
 .editorconfig
 .gitattributes
