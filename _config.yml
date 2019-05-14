@@ -26,7 +26,9 @@ exclude: ['gulpfile.js',
   'Rakefile',
   'yarn-error.log',
   'yarn.lock',
-  'node_modules']
+  'node_modules',
+  'css/src/',
+  'script/src/']
 
 # Prose configuration
 # Set ignore parameter to limit access to files we don't want available to edit
