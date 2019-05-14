@@ -28,6 +28,7 @@ exclude: ['gulpfile.js',
   'yarn.lock',
   'node_modules',
   'css/src/',
+  'css/deps/'
   'script/src/']
 
 # Prose configuration
