@@ -7,6 +7,14 @@ build/lib/vendors*
 build/lib/jruby-compiled
 _notes/
 css/*.css
+# keep build tools off the website
+.editorconfig
+.gitattributes
+gulpfile.js
+package.json
+params.json
+Rakefile
+yarn*
 
 # OS generated files #
 .DS_Store
