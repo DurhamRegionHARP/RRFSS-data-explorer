@@ -32,26 +32,10 @@
 			</li>
 {% endif %}
 		</ul>
-		<header role="banner">
-			<div id="wb-bnr">
-				<div id="wb-bar" class="visible-xs visible-sm">
-          <div class="container-fluid">
-            <div class="row">
-{% unless page.mobimenu == "false" %}
-							<section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn" aria-label="Open mobile menu">
-								<h2>{{ site.data.i18n-base[page.language].srch-menus }}</h2>
-								{% include base/mobimenu.html %}
-							</section>
-{% endunless %}              
-            </div>
-          </div>
-        </div>
-			  <div class="container-fluid">
-				  <div class="row">
-					  <div id="wb-sttl" class="col-md-8">
-							{% include theme-base/brand.html %}
-						</div>	
-					</div>
+		<header>
+			<div id="wb-bnr" class="container-fluid">
+				<div class="row">
+					{% include theme-base/brand.html %}
 				</div>
 			</div>
 {% if page.sitemenu == "false" %}
