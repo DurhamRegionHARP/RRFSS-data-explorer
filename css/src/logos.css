@@ -3,5 +3,8 @@
  *
  */
 #wb-auto-1.on{
-  display: block;
-}
+  display: block; }
+.masthead{
+  background-color: #113c8d;
+  padding-top: 15px;
+  padding-bottom: 15px; }
