@@ -1,9 +1,18 @@
-<div class="brand">
-	<a href="{{ "/" | relative_url }}">
-		<img id="harp" src="{{ "/assets/images/logo.png" | relative_url}}" alt="" />
-		<span class="wb-inv">HARP Team Logo</span>
-		<img id="rrfss" src="{{ "/assets/images/rrfss.png" | relative_url}}" alt="" />
-		<span class="wb-inv">RRFSS logo</span>
-		<span class="h1">{{ site.title }}</span>
-	</a>
+<div class="brand col-xs-8">
+	<img id="harp" src="{{ "/assets/images/logo.png" | relative_url}}" alt="HARP Team logo" />
+	<img id="rrfss" src="{{ "/assets/images/rrfss.png" | relative_url}}" alt="RRFSS logo" />
+</div>
+<div class="col-xs-4">
+	<nav class="dropdown" typeof="SiteNavigationElement">
+		<button id="menu-btn" class="btn btn-info pull-right wb-toggle" type="button" data-toggle='{"selector":".dropdown-menu"}'>
+			Menu
+		</button>
+		<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="menu-btn">
+			<li><a href="#">Action</a></li>
+			<li><a href="#">Another action</a></li>
+			<li><a href="#">Something else here</a></li>
+			<li role="separator" class="divider"></li>
+			<li><a href="#">Separated link</a></li>
+		</ul>	
+	</nav>
 </div>
