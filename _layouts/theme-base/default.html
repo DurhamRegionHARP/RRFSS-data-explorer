@@ -33,27 +33,11 @@
 {% endif %}
 		</ul>
 		<header>
-			<div class="navbar">
-				<div id="wb-bnr" class="container">
-					<div class="row">
-						{% include theme-base/brand.html %}
-					</div>
+			<div id="wb-bnr" class="container">
+				<div class="row">
+					{% include theme-base/brand.html %}
 				</div>
 			</div>
-		</div>
-{% if page.sitemenu == "false" %}
-			<span data-trgt="mb-pnl" class="wb-menu hide"></span>
-{% else %}
-			<nav role="navigation" id="wb-sm" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement" data-trgt="mb-pnl" aria-labelledby="st-nav-name">
-				{% include base/sitemenu.html %}
-			</nav>
-{% endif %}
-{% unless page.breadcrumb == "false" %}
-			<nav role="navigation" id="wb-bc" property="breadcrumb">
-				<h2>{{ site.data.i18n-base[page.language].you-are-here }}</h2>
-				{% include base/breadcrumbs.html %}
-			</nav>
-{% endunless %}
 		</header>
 
 {% if page.secondarymenu == "true" %}
