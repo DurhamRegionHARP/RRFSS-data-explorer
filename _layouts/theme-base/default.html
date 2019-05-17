@@ -34,35 +34,15 @@
 		</ul>
 		<header>
 			<div id="wb-bnr" class="container">
-				<div class="row">
+				<div class="brand row">
 					{% include theme-base/brand.html %}
 				</div>
 			</div>
 		</header>
-
-{% if page.secondarymenu == "true" %}
-		<div class="container">
-			<div class="row">
-{% endif %}
-		<main role="main" property="mainContentOfPage" class="{% if page.secondarymenu == "true" %}col-md-9 col-md-push-3{% else %}container-fluid{% endif %}">
-			<h1 id="wb-cont" class="wb-inv" property="name">{{ page.title }}</h1>
-			<!-- Put some margin in here -->
-			{% include base/contentbuttons.html %}
+		<main role="main" property="mainContentOfPage" class="container">
+			<h1 id="wb-cont" property="name">{{ page.title }}</h1>
 			{{ content }}
-{% if page.modified == null or page.modified == '' %}
-{% else %}
-			{% include base/datemodified.html %}
-{% endif %}
 		</main>
-{% if page.secondarymenu == "true" %}
-				<nav role="navigation" id="wb-sec" typeof="SiteNavigationElement" class="col-md-3 col-md-pull-9 visible-md visible-lg">
-					<h2>{{ site.data.i18n-base[page.language].tmpl-section-menu }}</h2>
-					{% include base/secondarymenu.html %}
-				</nav>
-			</div>
-		</div>
-{% endif %}
-
 {% unless page.footer == "false" %}
 		<footer role="contentinfo" class="nav-footer">
 			<div class="container-fluid">
