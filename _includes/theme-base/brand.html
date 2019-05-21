@@ -4,10 +4,10 @@
 </div>
 <div class="col-xs-5">
 	<nav typeof="SiteNavigationElement">
-		<button id="menu-btn" class="btn btn-info pull-right wb-toggle" type="button" data-toggle='{"selector":".dropdown-menu"}'>
+		<button id="menu-btn" class="btn btn-info pull-right wb-toggle" aria-label="Main Menu" data-toggle='{"selector":".dropdown-menu"}'>
 			<strong>Menu <span class="fas fa-chevron-down"></span></strong>
 		</button>
-		<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="menu-btn">
+		<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="menu-btn" role="menu" tabindex="-1">
 			{% include base/sitemenu.html %}
 		</ul>	
 	</nav>
