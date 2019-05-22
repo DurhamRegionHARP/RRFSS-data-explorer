@@ -5,7 +5,9 @@ const uglifyjs = require('gulp-uglify');
 const rename = require('gulp-rename');
 
 function css(){
-  return src(['css/deps/*.css', './css/src/theme.css', './css/src/logos.css', './css/src/cards.css'])
+  return src(['css/deps/*.css', './css/src/theme.css',
+              './css/src/logos.css', './css/src/cards.css',
+              './css/src/foot.css'])
          .pipe(concat('styles.css'))
          .pipe(uglifycss({ "uglyComments": true }))
          .pipe(rename({ extname: '.min.css' }))
