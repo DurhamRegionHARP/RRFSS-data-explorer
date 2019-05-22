@@ -9606,14 +9606,8 @@ header .brand {
  Site information
 */
 #wb-info {
-  background: #e1e4e7;
   position: relative;
   z-index: 5; }
-  #wb-info a {
-    font-size: .875em;
-    text-decoration: none; }
-    #wb-info a.wb-navcurr {
-      font-weight: 800; }
   #wb-info .brand {
     background: #f8f8f8;
     line-height: 30px; }
@@ -9644,11 +9638,7 @@ header .brand {
       #wb-info .tofpg a:hover {
         text-decoration: none; }
   #wb-info nav {
-    padding-bottom: 2em;
-    padding-top: 2em;
     position: relative; }
-    #wb-info nav li {
-      margin-bottom: .75em; }
 
 [dir=rtl] footer .brand .text-right {
   text-align: left; }

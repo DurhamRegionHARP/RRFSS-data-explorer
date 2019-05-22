@@ -6,3 +6,5 @@
         text-decoration: underline; }
     .nav-footer a:hover {
         color: #6a94f3; }
+    .nav-footer span {
+        font-size: 2.5em; }
