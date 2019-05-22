@@ -1,0 +1,8 @@
+.nav-footer {
+	background: #333;
+    color: #fff; }
+    .nav-footer a {
+        color: #fff;
+        text-decoration: underline; }
+    .nav-footer a:hover {
+        color: #6a94f3; }
