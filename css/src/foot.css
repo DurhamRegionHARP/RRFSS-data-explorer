@@ -1,6 +1,7 @@
 .nav-footer {
 	background: #333;
-    color: #fff; }
+    color: #fff;
+    padding: 2rem 0 2rem 0; }
     .nav-footer a {
         color: #fff;
         text-decoration: underline; }
