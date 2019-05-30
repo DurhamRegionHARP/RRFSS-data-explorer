@@ -30,27 +30,23 @@ secondarymenu: "false"
 	</div>
 </div>
 <div class="row">
-    <div class="col-md-12">
-	    <div class="col-md-8">
-		    {% capture about_rrfss %}{% include about.md %}{% endcapture %}
-		    {{ about_rrfss | markdownify }}
-	    </div>
+	<div class="col-md-8">
+		{% capture about_rrfss %}{% include about.md %}{% endcapture %}
+		{{ about_rrfss | markdownify }}
+	</div>
+	<div class="col-md-4">
+		<h2>About the application</h2>
+		<p>This is an open source project that uses Jekyll, WET and Chartist.js.</p>
+		<ul class="list-unstyled">
+			<li class="mrgn-bttm-sm"><a class="btn btn-primary" href="https://github.com/DurhamRegionHARP/RRFSS-data-explorer">Send Feedback <span class="far fa-comment"></span></a></li>
+			<li class="mrgn-bttm-sm"><a class="btn btn-primary" href="https://github.com/DurhamRegionHARP/RRFSS-data-explorer">View Code <span class="fas fa-laptop-code"></span></a></li>
+			<li class="mrgn-bttm-sm"><a class="btn btn-primary" href="https://github.com/DurhamRegionHARP/RRFSS-data-explorer">Download Data <span class="fas fa-list-ol"></span></a></li>
+		</ul>
 	</div>
 </div>
 <div class="row">
-    <div class="col-md-12">
-		<div class="col-md-8">
-			<h2>About the Health Analytics, Research and Policy Team</h2>
-			<p>This project is brought to you by the Health Analytics, Research and Policy (HARP) team at the Durham Region Health Department. HARP is responsible for population health assessment, evaluation, research, and knowledge exchange within the Health Department. To see more reports on the health of Durham Region residents, please visit the <a title="Durham Region health stats" href="https://durham.ca/healthstats">Durham Region health stats page</a>.</p>
-		</div>
-		<div class="col-md-4">
-			<h2>About the application</h2>
-			<p>This is an open source project that uses Jekyll, WET and Chartist.js.</p>
-			<ul class="list-unstyled">
-				<li class="mrgn-bttm-sm"><a class="btn btn-primary" href="https://github.com/DurhamRegionHARP/RRFSS-data-explorer">Send Feedback <span class="far fa-comment"></span></a></li>
-				<li class="mrgn-bttm-sm"><a class="btn btn-primary" href="https://github.com/DurhamRegionHARP/RRFSS-data-explorer">View Code <span class="fas fa-laptop-code"></span></a></li>
-				<li class="mrgn-bttm-sm"><a class="btn btn-primary" href="https://github.com/DurhamRegionHARP/RRFSS-data-explorer">Download Data <span class="fas fa-list-ol"></span></a></li>
-			</ul>
-		</div>
+	<div class="col-md-12">
+		<h2>About the Health Analytics, Research and Policy Team</h2>
+		<p>This project is brought to you by the Health Analytics, Research and Policy (HARP) team at the Durham Region Health Department. HARP is responsible for population health assessment, evaluation, research, and knowledge exchange within the Health Department. To see more reports on the health of Durham Region residents, please visit the <a title="Durham Region health stats" href="https://durham.ca/healthstats">Durham Region health stats page</a>.</p>
 	</div>
 </div>
