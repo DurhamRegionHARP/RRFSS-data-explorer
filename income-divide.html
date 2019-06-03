@@ -31,13 +31,13 @@ secondarymenu: "false"
     </div>
 
     {% for category in categories %}
-    <h1 id="{{ category.name | slugify }}" class="contrast {% if category.name == 'Social determinants of health' %}first-section{% else %}category-section{% endif %}">{{ category.name }}
-      <a href="#{{ category.name | slugify }}" class="header-link"><span class="fa fa-link"></span></a></h1>
+    <h2 id="{{ category.name | slugify }}" class="contrast {% if category.name == 'Social determinants of health' %}first-section{% else %}category-section{% endif %}">{{ category.name }}
+      <a href="#{{ category.name | slugify }}" class="header-link"><span class="fa fa-link"></span></a></h2>
 
       {% for row in category.items %}
-        <h2 id="{{ row.Indicator | slugify }}" class="chart-section">{{ row.Indicator | replace: "<", "&lt;" }}
+        <h3 id="{{ row.Indicator | slugify }}" class="chart-section">{{ row.Indicator | replace: "<", "&lt;" }}
           <a href="#{{ row.Indicator | slugify }}" class="header-link"><span class="fa fa-link"></span></a>
-        </h2>
+        </h3>
 
         {% if row.subTitle %}<p>{{ row.subTitle }}</p>{% endif %}
         <div class="row">
