@@ -1,4 +1,4 @@
-Category,Indicator,subTitle,dataType,dataSource,dataSourceYear,description,chartComment,Note,Low,Medium,High,Lowlcl,Mediumlcl,Highlcl,Lowucl,Mediumucl,Highucl
+Category,Indicator,subTitle,dataType,dataSource,dataSourceYear,description,chartComment,Note,Low Income,Medium Income,High Income,Low Incomelcl,Medium Incomelcl,High Incomelcl,Low Incomeucl,Medium Incomeucl,High Incomeucl
 Alcohol Use,Adult Drinking Prevalence,,Percentage,,2018,Percentage of adults who reported drinking alcohol in the past year,,A note goes here,0.75,0.86,0.93,0.69,0.82,0.9,0.8,0.89,0.96
 Alcohol Use,Adherence to the Canadian Low-Risk Drinking Guidelines,,Percentage,,2018,Percentage of adutls who drink according to the Canadian Low-Risk Drinking Guidelines,,A note goes here,0.84,0.78,0.76,0.79,0.74,0.71,0.88,0.82,0.81
 Alcohol Use,Safe Level of Drinking During Pregnancy,,Percentage,,2018,Percentage of adults who believe there's no safe level of alcohol during pregnancy,,A note goes here,0.84,0.8,0.82,0.77,0.74,0.74,0.91,0.86,0.89
