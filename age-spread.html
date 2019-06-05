@@ -10,7 +10,7 @@ languagetoggle: "false"
 sitesearch: "false"
 breadcrumb: "false"
 secondarymenu: "false"
---- 
+---
 <div class="row">
   <div class="col-xs-12">
     {% assign categories = site.data.age_spread | group_by: 'Category' %}
@@ -56,7 +56,7 @@ secondarymenu: "false"
     <!-- Sidebar-->
     <div class="col-md-3 column end">
       <div class="well">
-        <aside class="related plm-mu">
+        <aside class="related plm-mu" aria-label="Comment on {{ row.Indicator }}">
           <!-- Description of indicator & comments -->
             {% if row.description %}<span class="h5">Description:</span>
               <span class="description">{{ row.description | replace: "<", "&lt;" | markdownify }}</span>{% endif %}
