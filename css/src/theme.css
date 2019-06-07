@@ -9344,19 +9344,13 @@ header {
     margin-bottom: 10px;
     padding-bottom: 10px;
     padding-top: 10px; }
-    header .brand a {
-      display: block;
-      height: auto;
-      padding-bottom: 0;
-      position: relative;
-      width: auto; }
-      header .brand a:after {
-        bottom: 0;
-        content: "";
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 0; }
+    header .brand a:after {
+      bottom: 0;
+      content: "";
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0; }
     header .brand img,
     header .brand object {
       height: auto;
