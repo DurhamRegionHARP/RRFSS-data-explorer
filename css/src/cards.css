@@ -1,7 +1,7 @@
 /*
  * Cards for the home screen links
  *
- */ 
+ */
 .card-list{
   display: flex;
   flex-wrap: wrap;
@@ -12,7 +12,7 @@
   transition: 0.3s;
   border-radius: 5px;}
   .card-wrapper:hover, .card-wrapper:focus{
-    box-shadow: 0 0 0 5px #d7d7d7; 
+    box-shadow: 0 0 0 5px #d7d7d7;
     outline: none;
     transition: box-shadow 150ms; }
     .card-wrapper:hover .h5, .card-wrapper:focus .h5{
@@ -22,6 +22,8 @@
     color: inherit;
     height: 100%;
     text-decoration: none; }
+    .card-wrapper > a:visited{
+      color: initial; }
   .card-wrapper .card{
     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
     border-radius: 3px;
