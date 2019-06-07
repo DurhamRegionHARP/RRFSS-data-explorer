@@ -3,12 +3,19 @@
 	<img id="rrfss" src="{{ "/assets/images/rrfss.png" | relative_url}}" alt="RRFSS logo" />
 </div>
 <div class="col-xs-5">
-	<nav aria-labelledby="menu-btn" typeof="SiteNavigationElement">
-		<button id="menu-btn" class="btn btn-info pull-right wb-toggle" aria-label="Quick Links Menu" data-toggle='{"selector":".dropdown-menu"}'>
-			<strong>Menu <span class="fas fa-chevron-down"></span></strong>
-		</button>
-		<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="menu-btn" role="menu" tabindex="-1">
-			{% include base/sitemenu.html %}
-		</ul>	
-	</nav>
+  <a id="menu-btn" href="#site-menu" class="btn btn-info overlay-lnk pull-right" role="button" aria-label="Quick Links Menu" aria-haspopup="true" aria-controls="site-menu">
+    <strong>Menu <span class="fas fa-chevron-down"></span></strong>
+  </a>
+  <section id="site-menu" class="wb-overlay modal-content overlay-def wb-popup-mid">
+    <header class="modal-header">
+      <h2 class="modal-title">Site Menu</h2>
+    </header>
+    <div class="modal-body">
+      <nav class="wb-menu" typeof="SiteNavigationElement" aria-labelledby="menu-btn">
+          <ul class="list-unstyled mb-menu" role="menu" tabindex="-1">
+            {% include base/sitemenu.html %}
+          </ul>
+      </nav>
+    </div>
+  </section>
 </div>
