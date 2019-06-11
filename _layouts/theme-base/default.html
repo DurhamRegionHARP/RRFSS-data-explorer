@@ -9,7 +9,8 @@
 		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
 		{% include base/pagetitle.html %}
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
-		<meta name="description" content="{% if page.description == null or page.description == '' %}{{ site.data.i18n-base[page.language].site-title }}{% else %}{{ page.description }}{% endif %}" />
+    <meta name="description" content="{% if page.description == null or page.description == '' %}{{ site.data.i18n-base[page.language].site-title }}{% else %}{{ page.description }}{% endif %}" />
+    {% include base/socialmediatags.html %}
 		{% include base/headresources.html %}
 	</head>
 	<body vocab="http://schema.org/" typeof="WebPage">
