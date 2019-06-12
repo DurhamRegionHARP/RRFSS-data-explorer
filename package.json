@@ -8,7 +8,8 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack",
-    "gulp": "gulp build"
+    "gulp": "gulp build",
+    "svg": "gulp img"
   },
   "dependencies": {
     "chartist": "^0.11.0",
@@ -21,6 +22,7 @@
     "gulp-cli": "^2.2.0",
     "gulp-concat": "^2.6.1",
     "gulp-rename": "^1.4.0",
+    "gulp-svgmin": "^2.2.0",
     "gulp-uglify": "^3.0.2",
     "gulp-uglifycss": "^1.1.0",
     "webpack": "^4.31.0"
