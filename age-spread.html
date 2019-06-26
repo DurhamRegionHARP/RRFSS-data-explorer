@@ -54,14 +54,14 @@ secondarymenu: "false"
       {% endif %}
     </div>
     <!-- Sidebar-->
-    <div class="col-md-3 column end">
+    <div class="col-md-4 column end">
       <div class="well">
         <aside class="related plm-mu" aria-label="Comment on {{ row.Indicator }}">
           <!-- Description of indicator & comments -->
             {% if row.description %}<span class="h5">Description:</span>
               <span class="description">{{ row.description | replace: "<", "&lt;" | markdownify }}</span>{% endif %}
             {% if row.chartComment or row.Note %}<span class="h5">Note:</span><br> {% endif %}
-            {% if row.chartComment %}  <p>{{ row.chartComment }}</p>{% endif %}
+            {% if row.chartComment %}  <p>{{ row.chartComment | replace: "&lt;", "<" | replace: "&gt;", ">" }}</p>{% endif %}
             {% if row.Note %} <p>{{ row.Note }}</p>{% endif %}
               <!-- Data source(s) -->
           {% if row.dataSource %}<span class="h5">Source:</span><br>
