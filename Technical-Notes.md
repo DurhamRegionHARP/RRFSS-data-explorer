@@ -1,4 +1,5 @@
 ---
+layout: "theme-base/default"
 ---
 # Technical Notes
 
