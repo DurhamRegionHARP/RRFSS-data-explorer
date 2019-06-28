@@ -32,7 +32,7 @@ secondarymenu: "false"
 {% for category in categories %}
 <div class="row">
   <div class="col-xs-12">
-    <h2 id="{{ category.name | slugify }}" class="contrast {% if category.name == 'Social determinants of health' %}first-section{% else %}category-section{% endif %}">{{ category.name }}
+    <h2 id="{{ category.name | slugify }}" class="category-section">{{ category.name }}
       <a href="#{{ category.name | slugify }}" class="header-link"><span class="fa fa-link"></span></a>
     </h2>
   </div>
@@ -54,24 +54,27 @@ secondarymenu: "false"
       {% endif %}
     </div>
     <!-- Sidebar-->
-    <div class="col-md-3 column end">
-      <div class="well">
-        <aside class="related plm-mu" aria-label="Comment on {{ row.Indicator }}">
-          <!-- Description of indicator & comments -->
-            {% if row.description %}<span class="h5">Description:</span>
-              <span class="description">{{ row.description | replace: "<", "&lt;" | markdownify }}</span>{% endif %}
-            {% if row.chartComment or row.Note %}<span class="h5">Note:</span><br> {% endif %}
-            {% if row.chartComment %}  <p>{{ row.chartComment }}</p>{% endif %}
-            {% if row.Note %} <p>{{ row.Note }}</p>{% endif %}
-              <!-- Data source(s) -->
-          {% if row.dataSource %}<span class="h5">Source:</span><br>
-            <span>{{ row.dataSource | markdownify | remove: '<p>' | remove: '</p>' }} | {{ row.dataSourceYear }}</span>
-          {% endif %}
-          <!--<input type="button" id="share-button" class="button" value="Image">-->
-        </aside>
+    <div class="col-md-4">
+        <div class="well">
+          <aside class="related" aria-label="Comment on {{ row.Indicator }}">
+            <!-- Description of indicator & comments -->
+            {% if row.description %}
+              <p class="related-title"><span class="h5">Description:</span></p>
+              <p class="related-text">{{ row.description | replace: "<", "&lt;" }}</p>
+            {% endif %}
+            {% if row.chartComment %}
+            <p class="related-title"><span class="h5">Note:</span></p>
+              <p class="related-text">{{ row.chartComment | replace: "&lt;", "<" | replace: "&gt;", ">" }}</p>
+            {% endif %}
+            <!-- Data collection period -->
+            {% if row.Note %}
+            <p class="related-title"><span class="h5">Data Year:</span></p>
+              <p class="related-text">{{ row.Note }}, {{ row.dataSourceYear }}</p>
+            {% endif %}
+          </aside>
+        </div>
       </div>
     </div>
-  </div>
   <!-- End of each chart section with BACK TO TOP link -->
   <div class="row">
     <div class="col-xs-12">
@@ -81,8 +84,9 @@ secondarymenu: "false"
   {% endfor %}
 {% endfor %}
 <script>
-  document.getElementById('categories').addEventListener('change', function (evt) {
-    var value = this.value;
-    window.location.hash = value;
-  })
+  window.addEventListener('load', function(){
+    document.getElementById('categories').addEventListener('change', function(e){
+        window.location.hash = e.target.value;
+    });
+  });
 </script>
