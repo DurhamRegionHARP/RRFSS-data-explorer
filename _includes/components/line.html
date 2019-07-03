@@ -5,7 +5,6 @@
   var container = '#chart-{{ id }}'
   var labels = {{ include.labels | jsonify }}
   var row = {{ include.row | jsonify }}
-
   // Construct array of objects from data using indicators
   var series = labels.map(function (col) {
     return row[col] || null
@@ -16,7 +15,7 @@
   }
   var chartOpts = {
     low: 0,
-//    high: 1,
+    high: 1,
     onlyInteger: true,
     showArea: true,
     scaleMinSpace: 30,
@@ -27,13 +26,10 @@
       }
     },
     axisX: {
-      showGrid: false //,
-//      labelInterpolationFnc: function (value) {
-//        return value.toString().slice(-2)
-//      }
+      showGrid: false
     },
     lineSmooth: Chartist.Interpolation.none({
-      fillHoles: true, // connects line when missing data points
+      fillHoles: false,
     }),
     plugins: [
       Chartist.plugins.tooltip({
@@ -46,15 +42,11 @@
       Chartist.plugins.ctAccessibility({
         caption: '{{ row.Indicator }}',
         seriesHeader: 'year',
-//        summary: '{{ row.description | escape}}',
         valueTransform: Chartist.noop
       })
     ],
   }
-  var responsiveOpts = {
-	  
-  }
-
+  var responsiveOpts = {}
   new Chartist.Line(container, chartData, chartOpts)
 })()
 </script>
