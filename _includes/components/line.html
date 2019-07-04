@@ -9,6 +9,13 @@
   var series = labels.map(function (col) {
     return row[col] || null
   })
+  var upper = labels.map(function (col) {
+      return row[col + 'ucl'] || null
+    })
+    var lower = labels.map(function (col) {
+      return row[col + 'lcl'] || null
+    })
+
   var chartData = {
     labels: labels,
     series: [series]
@@ -18,12 +25,13 @@
     high: 1,
     onlyInteger: true,
     showArea: true,
-    scaleMinSpace: 30,
+    scaleMinSpace: 20,
     axisY: {
       labelInterpolationFnc: function (value) {
         // do whatever math operation you want here
-        return Math.round(value * 1000) / 10 + '%';
-      }
+        return Math.round(value * 100) + '%';
+      },
+      scaleMinSpace: 30
     },
     axisX: {
       showGrid: false
@@ -43,7 +51,14 @@
         caption: '{{ row.Indicator }}',
         seriesHeader: 'year',
         valueTransform: Chartist.noop
-      })
+      }),
+      Chartist.plugins.errorBars({
+          horizontal: false,
+          confidenceLimit: {
+            upper: [upper],
+            lower: [lower]
+          }
+        })
     ],
   }
   var responsiveOpts = {}
