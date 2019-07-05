@@ -6,5 +6,5 @@
   font-size: 1.5rem; }
 .related .related-title{
   margin: 0; }
-.to-top:visited{
+.to-top:visited, .to-top:hover{
   color: initial; }

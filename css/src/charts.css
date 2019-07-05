@@ -18,7 +18,7 @@
   font-size: 0.85em;
   opacity: 0;
   transition: opacity 0.2s ease-in-out;}
-.header-link:visited{
+.header-link:visited, .header-link:hover{
   color: initial;}
 h2:hover .header-link, h3:hover .header-link{
   opacity: 1;}
