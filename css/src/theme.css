@@ -5082,7 +5082,8 @@ a.btn, .nav a {
   margin-top: auto; }
   .alert > :first-child:before {
     display: inline-block;
-    font-family: "Glyphicons Halflings";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     margin-left: -1.3em;
     position: absolute; }
 
@@ -5119,7 +5120,7 @@ a.btn, .nav a {
 
 .alert-info > :first-child:before {
   color: #269abc;
-  content: "\e086"; }
+  content: "\f05a"; }
 
 .label-warning, .label-warning[href]:hover, .label-warning[href]:focus, .label-warning[href]:active, .alert-warning, details.alert.alert-warning, details.alert.alert-warning[open] {
   background: #f9f4d4;

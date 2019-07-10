@@ -37,8 +37,11 @@
 					</div>
 				</div>
 			</div>
-		</header>
+    </header>
 		<main class="container">
+{% unless page.feedback == "false" %}
+      {% include feedback-banner.html %}
+{% endunless %}
 			<h1 id="wb-cont" property="name">{{ page.title }}</h1>
 			{{ content }}
 		</main>
