@@ -1,8 +1,8 @@
 ---
 published: true
 layout: "theme-base/default"
-permalink: "technical-notes"
-title: RRFSS Data Explorer -- Technical Notes
+permalink: "/technical-notes/"
+title: Technical Notes
 language: en
 description: "Data notes and details about RRFSS"
 languagetoggle: "false"
@@ -10,8 +10,6 @@ sitesearch: "false"
 breadcrumb: "false"
 secondarymenu: "false"
 ---
-# Technical Notes
-
 ## Rapid Risk Factor Surveillance System
 The Rapid Risk Factor Surveillance System (<abbr title="Rapid Risk Factor Surveillance System">RRFSS</abbr>) is an ongoing telephone survey of adults that collects information about health knowledge, attitudes and behaviours of Durham Region residents. The information is used to support the planning and evaluation of public health programs and services.
 
