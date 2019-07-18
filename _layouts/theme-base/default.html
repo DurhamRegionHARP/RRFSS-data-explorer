@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html class="no-js" lang="{{ page.language }}" dir="{{ site.data.i18n-base[page.language].lang-dir }}">
 	<head>
-		<meta charset="utf-8" />
-		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
-		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
 		{% include base/pagetitle.html %}
-		<meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta name="description" content="{% if page.description == null or page.description == '' %}{{ site.data.i18n-base[page.language].site-title }}{% else %}{{ page.description }}{% endif %}" />
     {% include base/socialmediatags.html %}
+ 		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
 		{% include base/headresources.html %}
 	</head>
   <body vocab="http://schema.org/" typeof="WebPage">
