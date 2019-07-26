@@ -1,7 +1,3 @@
 ## What is the RRFSS Data Explorer?
 
-<<<<<<< HEAD
-The RRFSS Data Explorer is a tool that let’s you explore data on health behaviours, knowledge and attitudes among Durham Region residents. The data is collected using the Rapid Risk Factor Surveillance System (RRFSS), which is a phone survey of adults age 18+ who live in Durham Region. RRFSS collects information on a variety of health topics such as tobacco and alcohol use, active transportation, screen time use, nutrition, flu immunization, public health inspections, awareness of Lyme disease, and much more. It is intended to provide an easy way to access and visualize all of the information collected in the RRFSS survey. This tool allows you examine the RRFSS data by demographic information of the survey respondents, by their gender, age group, income level, and municipality which they live in.
-=======
 The RRFSS Data Explorer is a tool that lets you view data on health behaviours, knowledge, and attitudes among Durham Region residents. The Rapid Risk Factor Surveillance System (RRFSS) is a phone survey of Ontario adults age 18 and older. RRFSS collects information on health behaviours, health conditions, and social and environmental determinants of health. The Data Explorer provides an easy way to access and visualize important information collected in RRFSS. The tool shows information across five demographic categories: gender, age, income, and municipality. This way, you can see public health challenges that exist between groups of people.
->>>>>>> site-banner
