@@ -2,39 +2,43 @@
 <div id="chart-{{ id }}" class="ct-chart ct-major-eleventh"></div>
 <script>
 (function () {
-  var container = '#chart-{{ id }}'
-  var labels = {{ include.labels | jsonify }}
-  var row = {{ include.row | jsonify }}
-
+  var container = '#chart-{{ id }}';
+  var labels = {{ include.labels | jsonify }};
+  var row = {{ include.row | jsonify }};
   // Construct array of objects from data using indicators
   var series = labels.map(function (col) {
     return row[col] || null
-  })
+  });
+  var upper = labels.map(function (col) {
+    return row[col + 'ucl'] || null
+  });
+  var lower = labels.map(function (col) {
+    return row[col + 'lcl'] || null
+  });
   var chartData = {
     labels: labels,
     series: [series]
-  }
+  };
   var chartOpts = {
     low: 0,
-//    high: 1,
+    high: 1,
     onlyInteger: true,
     showArea: true,
-    scaleMinSpace: 30,
+    fullWidth: true,
+    lineSmooth: Chartist.Interpolation.none({
+      fillHoles: false,
+    }),
     axisY: {
+      scaleMinSpace: 30,
       labelInterpolationFnc: function (value) {
         // do whatever math operation you want here
-        return Math.round(value * 1000) / 10 + '%';
+        return Math.round(value * 100) + '%';
       }
     },
     axisX: {
-      showGrid: false //,
-//      labelInterpolationFnc: function (value) {
-//        return value.toString().slice(-2)
-//      }
+      showGrid: false,
+      labelOffset: { x: -15, y: 5 }
     },
-    lineSmooth: Chartist.Interpolation.none({
-      fillHoles: true, // connects line when missing data points
-    }),
     plugins: [
       Chartist.plugins.tooltip({
         class: 'chartist-tooltip',
@@ -46,15 +50,18 @@
       Chartist.plugins.ctAccessibility({
         caption: '{{ row.Indicator }}',
         seriesHeader: 'year',
-//        summary: '{{ row.description | escape}}',
         valueTransform: Chartist.noop
+      }),
+      Chartist.plugins.errorBars({
+        horizontal: false,
+        confidenceLimit: {
+          upper: [upper],
+          lower: [lower]
+        }
       })
     ],
-  }
-  var responsiveOpts = {
-	  
-  }
-
-  new Chartist.Line(container, chartData, chartOpts)
-})()
+  };
+  var responsiveOpts = {};
+  new Chartist.Line(container, chartData, chartOpts);
+})();
 </script>

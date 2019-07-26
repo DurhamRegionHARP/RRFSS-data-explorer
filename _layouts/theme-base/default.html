@@ -1,19 +1,17 @@
 <!DOCTYPE html>
-<!--[if lt IE 9]><html class="no-js lt-ie9" lang="{{ page.language }}" dir="{{ site.data.i18n-base[page.language].lang-dir }}"><![endif]-->
-<!--[if gt IE 8]><!-->
 <html class="no-js" lang="{{ page.language }}" dir="{{ site.data.i18n-base[page.language].lang-dir }}">
-<!--<![endif]-->
 	<head>
-		<meta charset="utf-8" />
-		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
-		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
 		{% include base/pagetitle.html %}
-		<meta content="width=device-width, initial-scale=1" name="viewport" />
-		<meta name="description" content="{% if page.description == null or page.description == '' %}{{ site.data.i18n-base[page.language].site-title }}{% else %}{{ page.description }}{% endif %}" />
+    <meta name="description" content="{% if page.description == null or page.description == '' %}{{ site.data.i18n-base[page.language].site-title }}{% else %}{{ page.description }}{% endif %}">
+    {% include base/socialmediatags.html %}
+ 		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
 		{% include base/headresources.html %}
 	</head>
-	<body vocab="http://schema.org/" typeof="WebPage">
-  <!-- Google Tag Manager (noscript) -->
+  <body vocab="http://schema.org/" typeof="WebPage">
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTB8LN5"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
@@ -32,73 +30,30 @@
 			</li>
 {% endif %}
 		</ul>
-		<header role="banner">
-			<div id="wb-bnr">
-				<div id="wb-bar" class="visible-xs visible-sm">
-          <div class="container-fluid">
-            <div class="row">
-{% unless page.mobimenu == "false" %}
-							<section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn" aria-label="Open mobile menu">
-								<h2>{{ site.data.i18n-base[page.language].srch-menus }}</h2>
-								{% include base/mobimenu.html %}
-							</section>
-{% endunless %}              
-            </div>
-          </div>
-        </div>
-			  <div class="container-fluid">
-				  <div class="row">
-					  <div id="wb-sttl" class="col-md-8">
-							{% include theme-base/brand.html %}
-						</div>	
+		<header>
+			<div class="masthead container-fluid">
+				<div id="wb-bnr" class="container">
+					<div class="brand row">
+						{% include theme-base/brand.html %}
 					</div>
 				</div>
 			</div>
-{% if page.sitemenu == "false" %}
-			<span data-trgt="mb-pnl" class="wb-menu hide"></span>
-{% else %}
-			<nav role="navigation" id="wb-sm" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement" data-trgt="mb-pnl" aria-labelledby="st-nav-name">
-				{% include base/sitemenu.html %}
-			</nav>
-{% endif %}
-{% unless page.breadcrumb == "false" %}
-			<nav role="navigation" id="wb-bc" property="breadcrumb">
-				<h2>{{ site.data.i18n-base[page.language].you-are-here }}</h2>
-				{% include base/breadcrumbs.html %}
-			</nav>
+    </header>
+		<main class="container">
+{% unless page.feedback == "false" %}
+      {% include feedback-banner.html %}
 {% endunless %}
-		</header>
-
-{% if page.secondarymenu == "true" %}
-		<div class="container">
-			<div class="row">
-{% endif %}
-		<main role="main" property="mainContentOfPage" class="{% if page.secondarymenu == "true" %}col-md-9 col-md-push-3{% else %}container-fluid{% endif %}">
-			<h1 id="wb-cont" class="wb-inv" property="name">{{ page.title }}</h1>
-			<!-- Put some margin in here -->
-			{% include base/contentbuttons.html %}
+			<h1 id="wb-cont" property="name">{{ page.title }}</h1>
 			{{ content }}
-{% if page.modified == null or page.modified == '' %}
-{% else %}
-			{% include base/datemodified.html %}
-{% endif %}
 		</main>
-{% if page.secondarymenu == "true" %}
-				<nav role="navigation" id="wb-sec" typeof="SiteNavigationElement" class="col-md-3 col-md-pull-9 visible-md visible-lg">
-					<h2>{{ site.data.i18n-base[page.language].tmpl-section-menu }}</h2>
-					{% include base/secondarymenu.html %}
-				</nav>
-			</div>
-		</div>
-{% endif %}
-
 {% unless page.footer == "false" %}
-		<footer role="contentinfo" class="nav-footer">
+		<footer class="nav-footer mrgn-tp-lg">
 			<div class="container-fluid">
         <div class="row">
           <div id="wb-info" class="col-sm-6 col-sm-offset-3 text-center">
-            <p class="mrgn-tp-sm">&copy; {{ site.copyright_date }} Health Analytics, Research &amp; Policy Team</a>.
-            <nav role="navigation" class="wb-navcurr" aria-labelledby="ft-nav-name">
+            <p class="mrgn-tp-sm">&copy; {{ site.copyright_date }} Health Analytics, Research &amp; Policy Team</p>
+            <p>Made with <span id="heart" class="fas fa-heart"></span> &amp; <span id="coffee" class="fas fa-coffee"></span></p>
+            <nav class="wb-navcurr" aria-labelledby="ft-nav-name">
               <h2 id="ft-nav-name">{{ site.data.i18n-base[page.language].tmpl-about-site }}</h2>
               {% include theme-base/footer.html %}
             </nav>

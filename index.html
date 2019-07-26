@@ -2,89 +2,53 @@
 published: true
 layout: "theme-base/default"
 permalink: "index.html"
-title: RRFSS Data Explorer
+title: Welcome to the RRFSS Data Explorer
 language: en
 altLangPrefix: index
 dateModified: "2018-05-10"
-description: "Showcase RRFSS results with Jekyll and WET"
+description: "A responsive and accessible visualization tool to see public health data about Durham Region"
 languagetoggle: "false"
 sitesearch: "false"
 breadcrumb: "false"
 secondarymenu: "false"
+feedback: "false"
 ---
-<div class="row mrgn-tp-lg">
-  <div class="col-xs-12">
-    <div class="cards">
-      <div class="card">
-        <a class="fade" href="{{ site.baseurl }}/age-spread/">
-          <img class="card-image img-responsive" alt="Avatars of different ages" src="{{ "/assets/images/flower.jpeg" | relative_url }}" />
-        </a>
-        <div class="card-container">
-          <span class="h5">Age Spread</span>
-          <p>View differences in risk factors across age groups</p>
-        </div>
-      </div>
-      <div class="card">
-        <a class="fade" href="{{ site.baseurl }}/gender-gap/">
-          <img class="card-image img-responsive" alt="Male and female avatars" src="{{ "/assets/images/flower.jpeg" | relative_url }}" />
-        </a>
-        <div class="card-container">
-            <span class="h5">Gender Gap</span>
-            <p>Compare risk factors between males and females</p>
-        </div>
-      </div>
-      <div class="card">
-        <a class="fade" href="{{ site.baseurl }}/income-divide/">
-          <img class="card-image img-responsive" alt="Front and back of a credit card" src="{{ "/assets/images/flower.jpeg" | relative_url }}" />
-        </a>
-        <div class="card-container">
-            <span class="h5">Income Divide</span>
-            <p>Explore the affect of income on health behaviour</p>
-        </div>
-      </div>
-      <div class="card">
-        <a class="fade" href="{{ site.baseurl}}/municipality/">
-          <img class="card-image img-responsive" alt="Sun shining on skyscrapers" src="{{ "/assets/images/flower.jpeg" | relative_url}}" />
-        </a>
-        <div class="card-container">
-          <span class="h5">Municipality</span>
-          <p>Look a risk factors across Durham Region</p>
-        </div>
-      </div>
-      <div class="card">
-        <a class="fade" href="{{ site.baseurl }}/trends-over-time/">
-          <img class="card-image img-responsive" alt="Pie, bar and line graphs" src="{{ "/assets/images/flower.jpeg" | relative_url}}" />
-        </a>
-        <div class="card-container">
-          <span class="h5">Trend Over Time</span>
-          <p>See how behaviours have changed over the years</p>
-        </div>
-      </div>
-    </div>
-   </div>
-</div>
 <div class="row">
-    <div class="col-md-12">
-	    <div class="col-md-8">
-		    {% capture about_rrfss %}{% include about.md %}{% endcapture %}
-		    {{ about_rrfss | markdownify }}
-	    </div>
+  <div class="container-fluid">
+	  <div class="row">
+			<div class="col-xs-12">
+				<h2 class="card-title">
+					<span class="fas fa-shapes"></span>
+					<span>Explore a category:</span>
+				</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				{% include home_cards.html %}
+			</div>
+    </div>
 	</div>
 </div>
 <div class="row">
-    <div class="col-md-12">
-		<div class="col-md-8">
-			<h2>About the Health Analytics, Research and Policy Team</h2>
-			<p>This project is brought to you by the Health Analytics, Research and Policy (HARP) team at the Durham Region Health Department. HARP is responsible for population health assessment, evaluation, research, and knowledge exchange within the Health Department. To see more reports on the health of Durham Region residents, please visit the <a title="Durham Region health stats" href="https://durham.ca/healthstats">Durham Region health stats page</a>.</p>
-		</div>
-		<div class="col-md-4">
-			<h2>About the application</h2>
-			<p>This is an open source project that uses Jekyll, WET and Chartist.js.</p>
-			<ul class="list-unstyled">
-				<li class="mrgn-bttm-sm"><a class="btn btn-primary" href="https://github.com/DurhamRegionHARP/RRFSS-data-explorer">Send Feedback <span class="far fa-comment"></span></a></li>
-				<li class="mrgn-bttm-sm"><a class="btn btn-primary" href="https://github.com/DurhamRegionHARP/RRFSS-data-explorer">View Code <span class="fas fa-laptop-code"></span></a></li>
-				<li class="mrgn-bttm-sm"><a class="btn btn-primary" href="https://github.com/DurhamRegionHARP/RRFSS-data-explorer">Download Data <span class="fas fa-list-ol"></span></a></li>
-			</ul>
-		</div>
+	<div class="col-md-8">
+		{% capture about_rrfss %}{% include about.md %}{% endcapture %}
+		{{ about_rrfss | markdownify }}
+	</div>
+	<div class="col-md-4">
+		<h2>About the application</h2>
+		<p>This is an open source project that uses <a href="https://jekyllrb.com">Jekyll</a>, <a href="https://wet-boew.github.io/wet-boew/index.html">WET</a>, and <a href="https://gionkunz.github.io/chartist-js/">Chartist.js</a>.</p>
+		<ul class="list-unstyled">
+			<li class="mrgn-bttm-sm"><a class="btn btn-primary" href="https://ocean.cognisantmd.com/questionnaires/core/QuestionnaireOnline.html?accessKey=aqXOutgLscxCwIoXhIQK" target="_blank">Send Feedback <span class="far fa-comment"></span></a></li>
+			<li class="mrgn-bttm-sm"><a class="btn btn-primary" href="https://github.com/DurhamRegionHARP/RRFSS-data-explorer">View Code <span class="fas fa-laptop-code"></span></a></li>
+      <li class="mrgn-bttm-sm"><a class="btn btn-primary" href="https://github.com/DurhamRegionHARP/RRFSS-data-explorer/tree/gh-pages/_data">Download Data <span class="fas fa-list-ol"></span></a></li>
+      <li class="mrgn-bttm-sm"><a class="btn btn-primary" href="{{ site.baseurl }}/technical-notes/">Read Technical Notes <span class="fas fa-cog"></span></a></li>
+		</ul>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<h2>About the Health Analytics, Research and Policy Team</h2>
+		<p>This project is brought to you by the Health Analytics, Research and Policy (HARP) team at the Durham Region Health Department. HARP is responsible for population health assessment, evaluation, research, and knowledge exchange within the Health Department. To see more reports on the health of Durham Region residents, please visit the <a title="Durham Region health stats" href="https://durham.ca/healthstats">Durham Region health stats page</a>.</p>
 	</div>
 </div>

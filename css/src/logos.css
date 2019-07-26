@@ -2,6 +2,9 @@
  * Image sizing for the brand banner
  *
  */
-@media screen and (max-width: 991px){
-  #wb-sttl #rrfss{
-  left: 3em;} }
+#wb-auto-1.on{
+  display: block; }
+.masthead{
+  background-color: #113c8d;
+  padding-top: 15px;
+  padding-bottom: 15px; }

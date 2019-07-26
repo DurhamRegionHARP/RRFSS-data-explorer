@@ -1,1 +1,5 @@
-<title>{{ page.title }}</title>
+{% if page.permalink != "index.html" %}
+  <title>{{ page.title }} -- RRFSS Data Explorer</title>
+{% else %}
+  <title>{{ page.title }}</title>
+{% endif %}

@@ -1,7 +1,18 @@
-<div class="brand">
-	<a href="{{ "/" | relative_url }}">
-    <img id="harp" class="img-responsive" src="{{ "/assets/images/logo.png" | relative_url}}" alt="HARP team Logo" />
-    <img id="rrfss" class="img-responsive" src="{{ "/assets/images/rrfss.png" | relative_url}}" alt="RRFSS Logo" />
-		<span>{{ site.title }}</span>
-	</a>
+<div class="col-xs-7">
+	<img id="harp" src="{{ "/assets/images/logo.png" | relative_url}}" alt="HARP Team logo" />
+	<img id="rrfss" src="{{ "/assets/images/rrfss.png" | relative_url}}" alt="RRFSS logo" />
+</div>
+<div class="col-xs-5">
+  <a id="menu-btn" href="#site-menu" class="btn btn-info overlay-lnk pull-right" role="button" aria-label="Quick Links Menu" aria-haspopup="true" aria-controls="site-menu">
+    <strong>Menu <span class="fas fa-chevron-down"></span></strong>
+  </a>
+  <div id="site-menu" class="wb-overlay modal-content overlay-def wb-popup-mid">
+    <div class="modal-body">
+      <nav class="wb-menu" typeof="SiteNavigationElement" aria-labelledby="menu-btn">
+          <ul class="list-unstyled mb-menu" role="menu" tabindex="-1">
+            {% include base/sitemenu.html %}
+          </ul>
+      </nav>
+    </div>
+  </div>
 </div>

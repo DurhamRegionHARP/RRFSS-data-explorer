@@ -26,17 +26,16 @@
     }
     var chartOpts = {
       low: 0,
-      chartPadding: {
-          right: 60
-      },
+      high: 1,
+      fullWidth: true,
       horizontalBars: true,
       axisY: {
         showGrid: false,
-        offset: 80,
+        offset: 55,
       },
       axisX: {
-        offset: 20,
-        scaleMinSpace: 50,
+        scaleMinSpace: 80,
+        labelOffset: { x: -15, y: 5 },
         labelInterpolationFnc: function (value) {
           return Math.round(value * 100) + '%';
         }
@@ -52,7 +51,9 @@
           caption: {{ row.Indicator | jsonify }},
           seriesHeader: 'dimension',
           summary: {{ row.description | jsonify }},
-          valueTransform: Chartist.noop
+          valueTransform: function (value) {
+            return Math.round(value * 100) + '%';
+          }
         }),
         Chartist.plugins.errorBars({
           horizontal: true,

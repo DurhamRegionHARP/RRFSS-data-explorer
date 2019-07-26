@@ -1,0 +1,19 @@
+/* Site menu overlay */
+#site-menu{
+  position: absolute;
+  min-width: 170px;
+  max-width: 170px;
+  max-height: 268px;
+  bottom: auto;
+  left: auto;
+  margin: 0;
+  transform: translate3d(0px, 60px, 0px); }
+  #site-menu .mfp-close{
+    display: none; }
+.modal-body li:hover{
+  background-color: #d3d3d3; }
+.modal-body a{
+  padding: 5px;
+  color: #333; }
+.modal-body a:hover, .modal-body a:visited{
+  color: #333; }

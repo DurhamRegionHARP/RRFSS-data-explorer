@@ -1,0 +1,21 @@
+.nav-footer {
+	background: #333;
+  color: #fff;
+  padding: 2rem 0 2rem 0; }
+  .nav-footer a {
+    color: #fff;
+    text-decoration: underline; }
+    .nav-footer a:visited{
+      color: #fff; }
+    .nav-footer a:hover {
+      color: #6a94f3; }
+  .nav-footer span {
+    font-size: 2.5em; }
+  .nav-footer .list-inline{
+    margin-left: 0; }
+#heart{
+  font-size: 1em;
+  color: #ff0000; }
+#coffee{
+  font-size: 1em;
+  color: #996633; }
