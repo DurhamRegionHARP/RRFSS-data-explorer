@@ -34,7 +34,7 @@ Indicators are analysed by household income level in this section. Income level 
 Indicators are presented by municipality in which the survey respondent resides. Note that due to a small number of survey respondents from Uxbridge, Scugog and Brock, respondents living in these municipalities are combined and presented as "North Durham Region".
 
 ### Trends Over Time
-Select indicators are presented by year that the survey data was collected. Indicator are only presented where data was available for a consecutive number of years.
+Select indicators are presented by year that the survey data was collected. Indicators are only presented where data was available for a consecutive number of years.
 
 ## More Information
 For more information, or if you require this information in an accessible format, please contact the Durham Health Connection Line at 905-666-6241 or 1-800-841-2729. You can also visit our [Durham Region Health Department website](https://www.durham.ca/health).
