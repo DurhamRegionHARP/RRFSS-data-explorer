@@ -79,14 +79,14 @@
   width: 100%;
   height: 169px; }
 .age-spread{
-  background-image: url("/RRFSS-data-explorer/assets/images/age.svg"); }
+  background-image: url("/assets/images/age.svg"); }
 .gender-gap{
-  background-image: url("/RRFSS-data-explorer/assets/images/gender.svg"); }
+  background-image: url("/assets/images/gender.svg"); }
 .income-divide{
-  background-image: url("/RRFSS-data-explorer/assets/images/income.svg"); }
+  background-image: url("/assets/images/income.svg"); }
 .municipality{
-  background-image: url("/RRFSS-data-explorer/assets/images/municipality.svg"); }
+  background-image: url("/assets/images/municipality.svg"); }
 .trends{
-  background-image: url("/RRFSS-data-explorer/assets/images/trends.svg"); }
+  background-image: url("/assets/images/trends.svg"); }
 .trends-alt{
-  background-image: url("/RRFSS-data-explorer/assets/images/trends-alt.svg"); }
+  background-image: url("/assets/images/trends-alt.svg"); }
