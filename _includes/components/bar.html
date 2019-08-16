@@ -85,8 +85,27 @@
         event.element.attr({
            y: event.y - event.height / 2
         });
+        var words = event.text.split(/\s+/),
+            lineHeight = -1.2,
+            lineNumber = 0;
+        if(words.length > 1){
+          var text = event.element.parent().elem('text', {
+            x: event.x,
+            y: event.y - event.height / 8,
+            height: event.height,
+            width: event.width
+          }).addClass('ct-label ct-vertical ct-start');
+          event.element.remove();
+          while(word = words.pop()){
+            tspan = text.elem('tspan', {
+              x: event.x,
+              y: event.y - event.height / 8,
+              dy: ++lineNumber * lineHeight + 'em'
+            });
+            tspan._node.textContent = word;
+          }
+        }
       }
     }
-  });
-  })()
+  });  })()
 </script>
