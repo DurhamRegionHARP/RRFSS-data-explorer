@@ -1,17 +1,15 @@
 <div class="container">
   <div class="row">
-    <div class="col-xs-5 col-sm-2">
+    <div class="col-xs-5 col-md-2 col-lg-1">
       <img id="logo" src="{{ "/assets/images/logo_xsm.jpg" | relative_url}}" alt="Durham Region logo" />
     </div>
-    <div class="col-xs-7 col-sm-10">
+    <div class="col-xs-7 col-md-10 col-lg-9 mrgn-tp-lg">
         <nav role="navigation" id="main-menu" data-trgt="mb-menu" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
           <div class="nvbar">
-              <h2 class="wb-inv">Topics menu</h2>
-              <div class="row">
-                <ul class="list-inline menu">
-                  {% include base/sitemenu.html %}
-                </ul>
-              </div>
+            <h2 class="wb-inv">Topics menu</h2>
+              <ul class="list-inline menu">
+                {% include base/sitemenu.html %}
+              </ul>
           </div>
         </nav>
         <section id="wb-glb-mn" class="wb-mb-links pull-right visible-sm visible-xs">
@@ -20,6 +18,28 @@
           <div id="mb-menu" class="wb-overlay modal-content overlay-def wb-panel-r" aria-hidden="true">
           </div>
         </section>
+    </div>
+    <div class="col-lg-2 mrgn-tp-lrg visible-lg">
+      <ul class="social list-inline">
+        <li>
+          <a href="https://facebook.com/{{ site.facebook_username }}">
+            <span class="wb-inv">Visit our Facebook page</span>
+            <span class="fab fa-facebook"></span>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/{{ site.twitter_username }}">
+            <span class="wb-inv">Visit our Twitter page</span>
+            <span class="fab fa-twitter"></span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/{{ site.github_username }}">
+            <span class="wb-inv">Visit our Github page</span>
+            <span class="fab fa-github"></span>
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
