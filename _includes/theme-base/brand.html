@@ -1,12 +1,12 @@
 <div class="container">
   <div class="row">
-    <div class="col-xs-2">
+    <div class="col-xs-5 col-sm-2">
       <img id="harp" src="{{ "/assets/images/logo.png" | relative_url}}" alt="HARP Team logo" style="width:100px;"/>
     </div>
-    <div class="col-xs-10">
-        <nav role="navigation" id="wb-sm" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
-          <div class="container nvbar">
-              <h2>Topics menu</h2>
+    <div class="col-xs-7 col-sm-10">
+        <nav role="navigation" id="main-menu" data-trgt="mb-menu" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+          <div class="nvbar">
+              <h2 class="wb-inv">Topics menu</h2>
               <div class="row">
                 <ul class="list-inline menu">
                   {% include base/sitemenu.html %}
@@ -14,10 +14,10 @@
               </div>
           </div>
         </nav>
-        <section id="wb-glb-mn" class="wb-mb-links col-xs-12 visible-sm visible-xs">
+        <section id="wb-glb-mn" class="wb-mb-links pull-right visible-sm visible-xs">
           <h2>Main Menu</h2>
-          <a href="#mb-pnl" title="Main menu" aria-controls="mb-pnl" class="overlay-lnk btn btn-sm btn-default" role="button">Main menu</a>
-          <div id="mb-pnl" class="wb-overlay modal-content overlay-def wb-panel-r" aria-hidden="true">
+          <a href="#mb-menu" title="Main menu" aria-controls="mb-menu" class="overlay-lnk btn btn-sm btn-default" role="button">Main menu</a>
+          <div id="mb-menu" class="wb-overlay modal-content overlay-def wb-panel-r" aria-hidden="true">
           </div>
         </section>
     </div>
