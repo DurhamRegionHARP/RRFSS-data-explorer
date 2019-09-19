@@ -4,7 +4,8 @@
 #main-menu li {
   border: none;  }
 #main-menu li a {
-  color: #fff;
+  color: #000000;
+  font-weight: 600;
   text-decoration: none; }
   #main-menu li a:hover, #main-menu li a:focus{
     text-decoration: underline; }

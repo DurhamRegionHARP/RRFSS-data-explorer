@@ -5,6 +5,6 @@
 #wb-auto-1.on{
   display: block; }
 .masthead{
-  background-color: #113c8d;
+  box-shadow: 0px 3px 5px 0px #113c8d;
   padding-top: 5px;
   padding-bottom: 5px; }
