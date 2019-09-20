@@ -302,7 +302,7 @@ a {
     color: #0535d2;
     text-decoration: none; }
   a:focus {
-    outline: 5px auto #4D90FE;
+    outline: 3px solid #4D90FE;
     outline-offset: -2px; }
 
 figure {

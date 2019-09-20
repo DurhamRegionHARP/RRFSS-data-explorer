@@ -15,7 +15,7 @@
 .social a {
   font-size: 2em;}
   .social a:hover, .social a:focus {
-    outline: 5px auto #4d90fe;
+    outline: 5px solid #4d90fe;
     outline-offset: -2px; }
   .social .fa-facebook {
     color: #1778f2; }
