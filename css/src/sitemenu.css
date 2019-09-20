@@ -9,3 +9,20 @@
   text-decoration: none; }
   #main-menu li a:hover, #main-menu li a:focus{
     text-decoration: underline; }
+.masthead .social {
+  margin-bottom: 0;
+  padding-top: 0.6em; }
+.social a {
+  font-size: 2em;}
+  .social a:hover, .social a:focus {
+    outline: 5px auto #4d90fe;
+    outline-offset: -2px; }
+  .social .fa-facebook {
+    color: #1778f2; }
+  .social .fa-twitter {
+    color:#1da1f3;  }
+  .social .fa-github {
+    color: #171515; }
+.social li a {
+  display: block;
+  padding: 0.15em; }
