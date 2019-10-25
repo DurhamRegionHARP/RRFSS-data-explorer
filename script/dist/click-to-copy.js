@@ -38,18 +38,35 @@
   $document.on( "clickcopy", selector, function( event ) {
     var elm = event.currentTarget,
         $elm = $( elm );
-
+    // Show a tooltip when the mouse comes in
+    $elm.hover(
+      //mouse in
+      function(){
+        var tip = document.createElement("span");
+        tip.setAttribute("id", "tip-text");
+        tip.setAttribute("class", "tip");
+        tip.innerHTML = "Copy URL";
+        this.appendChild(tip);
+      },
+      //mouse out
+      function(){
+        var el = document.getElementById("tip-text");
+        el.parentNode.removeChild(el);
+      }
+    );
     // Run when the element is clicked
     $elm.click( function(){
       var range = document.createRange();
-      range.selectNodeContents( this );
+      range.selectNodeContents( this.querySelector(".link-text") );
       var sel = window.getSelection();
       sel.removeAllRanges();
       sel.addRange( range );
       if( document.queryCommandEnabled("copy") ){
         var success = document.execCommand("copy");
         if ( success ){
-          alert("Copied: " + sel.toString() );
+          var tooltip = document.getElementById("tip-text");
+          tooltip.innerHTML = "Copied!";
+          console.log("copied " + sel.toString() );
         }
       }
     } );
