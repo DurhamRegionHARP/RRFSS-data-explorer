@@ -15,6 +15,5 @@ feedback: "false"
 ---
 Download our data to get ready-to-use CSV files you can remix for your project.
 
-## Data files
-We are greatful to the team at [jsDelivr](https://www.jsdelivr.com/) for serving our files to you on their super fast CDN.
+We are greatful to the team at [jsDelivr](https://www.jsdelivr.com/) for serving our files to you on their super fast CDN 🚀.
 {% include download-table.html %}
