@@ -302,7 +302,7 @@ a {
     color: #0535d2;
     text-decoration: none; }
   a:focus {
-    outline: 5px auto #4D90FE;
+    outline: 3px solid #4D90FE;
     outline-offset: -2px; }
 
 figure {
@@ -9350,37 +9350,6 @@ header {
 /*
  * Mobile Chevron
  */
-#wb-glb-mn {
-  margin-top: 20px; }
-  #wb-glb-mn ul {
-    min-width: 150px; }
-    #wb-glb-mn ul.chvrn {
-      background: #335075;
-      display: inline-block;
-      float: right;
-      height: 2.75em; }
-      #wb-glb-mn ul.chvrn li {
-        display: block;
-        padding-right: 0; }
-        #wb-glb-mn ul.chvrn li a {
-          color: #fff;
-          display: block;
-          font-size: 1.9em;
-          padding: 5px 20px 0 0; }
-      #wb-glb-mn ul.chvrn span .glyphicon-th-list {
-        padding-left: 12px;
-        top: 0; }
-      #wb-glb-mn ul.chvrn:before {
-        border-bottom: 1.375em solid transparent;
-        border-left: .6875em solid #f8f8f8;
-        border-top: 1.375em solid transparent;
-        content: " ";
-        display: block;
-        float: left;
-        height: 0;
-        position: relative;
-        width: 0; }
-
 /* IE Tweaks */
 .lt-ie9 header .brand a {
   margin-top: 0; }
@@ -11019,10 +10988,6 @@ table.nws-tbl > thead > tr > th {
  */
   header .brand a {
     margin-top: 15px; }
-  #wb-glb-mn {
-    margin-top: 20px; }
-    #wb-glb-mn ul.chvrn li a {
-      font-size: 1.7em; }
   /*
   WET-BOEW
   @title: Extra-small view and under (screen only)
@@ -11384,18 +11349,12 @@ table.nws-tbl > thead > tr > th {
   /*
  Banner (extra-extra-small view)
  */
-  header .brand, #wb-glb-mn {
+  header .brand {
     float: none !important;
     width: auto !important; }
   header .brand object,
   header .brand img {
     max-height: 33px; }
-  #wb-glb-mn ul {
-    width: 100%; }
-    #wb-glb-mn ul.chvrn {
-      margin-left: auto; }
-      #wb-glb-mn ul.chvrn:before {
-        border: 0; }
   /*
  * Site information (extra-extra-small view)
  */

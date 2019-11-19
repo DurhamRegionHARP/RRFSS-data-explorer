@@ -1,18 +1,48 @@
-<div class="col-xs-7">
-	<img id="harp" src="{{ "/assets/images/logo.png" | relative_url}}" alt="HARP Team logo" />
-	<img id="rrfss" src="{{ "/assets/images/rrfss.png" | relative_url}}" alt="RRFSS logo" />
-</div>
-<div class="col-xs-5">
-  <a id="menu-btn" href="#site-menu" class="btn btn-info overlay-lnk pull-right" role="button" aria-label="Quick Links Menu" aria-haspopup="true" aria-controls="site-menu">
-    <strong>Menu <span class="fas fa-chevron-down"></span></strong>
-  </a>
-  <div id="site-menu" class="wb-overlay modal-content overlay-def wb-popup-mid">
-    <div class="modal-body">
-      <nav class="wb-menu" typeof="SiteNavigationElement" aria-labelledby="menu-btn">
-          <ul class="list-unstyled mb-menu" role="menu" tabindex="-1">
-            {% include base/sitemenu.html %}
-          </ul>
-      </nav>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-5 col-md-2 col-lg-1">
+      <img id="logo" src="{{ "/assets/images/logo_xsm.jpg" | relative_url}}" alt="Durham Region logo" />
+    </div>
+    <div class="col-xs-7 col-md-10 col-lg-9 mrgn-tp-lg">
+        <nav role="navigation" id="main-menu" data-trgt="mb-menu" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+          <div class="nvbar">
+            <h2 class="wb-inv">Topics menu</h2>
+              <ul class="list-inline menu">
+                {% include base/sitemenu.html %}
+              </ul>
+          </div>
+        </nav>
+        <section id="wb-glb-mn" class="wb-mb-links pull-right visible-sm visible-xs">
+          <h2>Main Menu</h2>
+          <a href="#mb-menu" title="Main menu" aria-controls="mb-menu" class="overlay-lnk btn btn-default" role="button">
+            <span class="wb-inv">Open the main menu</span>
+            <span class="fas fa-bars"></span>
+          </a>
+          <div id="mb-menu" class="wb-overlay modal-content overlay-def wb-panel-r" aria-hidden="true">
+          </div>
+        </section>
+    </div>
+    <div class="col-lg-2 mrgn-tp-lg visible-lg">
+      <ul class="social list-inline">
+        <li>
+          <a href="https://facebook.com/{{ site.facebook_username }}">
+            <span class="wb-inv">Find us on Facebook</span>
+            <span class="fab fa-facebook"></span>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/{{ site.twitter_username }}">
+            <span class="wb-inv">Visit us on Twitter</span>
+            <span class="fab fa-twitter"></span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/{{ site.github_username }}">
+            <span class="wb-inv">Check us out on Github</span>
+            <span class="fab fa-github"></span>
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </div>

@@ -15,7 +15,8 @@
     "chartist": "^0.11.0",
     "chartist-error-bars": "^0.0.4",
     "chartist-plugin-accessibility": "^0.0.5",
-    "chartist-plugin-tooltips": "^0.0.17"
+    "chartist-plugin-tooltips": "^0.0.17",
+    "stickybits": "^3.6.7"
   },
   "devDependencies": {
     "gulp": "^4.0.2",

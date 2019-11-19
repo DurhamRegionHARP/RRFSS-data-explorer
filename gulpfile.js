@@ -14,7 +14,7 @@ function css(){
 }
 
 function js(){
-  return src(['script/src/chartist.js', 'script/src/chartist-*'])
+  return src(['script/src/chartist.js', 'script/src/chartist-*', 'script/src/stickybits.js'])
          .pipe(concat('bundle.js'))
          .pipe(uglifyjs())
          .pipe(rename({ extname: '.min.js' }))
