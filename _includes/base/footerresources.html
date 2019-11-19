@@ -1,4 +1,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
 <script src="https://wet-boew.github.io/wet-boew/js/wet-boew.js"></script>
-<script src="https://wet-boew.github.io/wet-boew-jekyll/assets/javascripts/global.js"></script>
+{% if page.title == "Download data" %}
 <script src="{{ "/script/dist/click-to-copy.js" | relative_url }}"></script>
+{% endif %}
