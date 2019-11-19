@@ -5,8 +5,8 @@ permalink: "/download"
 title: Download data
 language: en
 altLangPrefix: index
-dateModified: "2019-10-24"
-description: "Download the data used to create the RRFSS Data Explorer"
+dateModified: "2019-11-19"
+description: "Download the data used to create the RRFSS Data Explorer."
 languagetoggle: "false"
 sitesearch: "false"
 breadcrumb: "false"
