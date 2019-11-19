@@ -1,59 +1,69 @@
 ---
 published: true
 layout: "theme-base/default"
-permalink: "/terms/"
-title: Terms and conditions
+permalink: "/terms"
+title: Terms of Use and Privacy Statement
 language: en
 altLangPrefix: index
-dateModified: "2019-06-03"
-description: "Showcase RRFSS results with Jekyll and WET"
+dateModified: "2019-11-19"
+description: "Terms and conditions for this site and our privacy statement"
 languagetoggle: "false"
 sitesearch: "false"
 breadcrumb: "false"
 secondarymenu: "false"
 feedback: "false"
 ---
+## Acceptance of the Terms of Use
+Your access to and the use of the RRFSS Data Explorer website ("Website") constitutes your acceptance of and compliance with the terms and conditions set out below. If you do not agree with the terms and conditions, immediately exit this website. The Durham Region Health Department ("DRHD") may change or modify the terms of use at any time and without notice. You are encouraged to check here regularly to ensure your continued acceptance.
 ## Using files located on third-party servers
-To improve the functionality of the RRFFS Data Explorer website, certain files (such as open source libraries, images and scripts) may be delivered automatically to your browser via a trusted third-party server or content delivery network. The delivery of these files is intended to provide a seamless user experience by speeding response times and avoiding the need for each visitor to download these files. Where applicable, specific privacy statements covering these files are included in our [Privacy Notice](https://{{ site.baseurl}}/privacy/).
+To improve the functionality of the Website, certain files (such as open source libraries, images and scripts) may be delivered automatically to your browser via a trusted third-party server or content delivery network. The delivery of these files is intended to provide a seamless user experience by speeding response times and avoiding the need for each visitor to download these files. Where applicable, specific privacy statements covering these files are included in our [Privacy Statement]({{ page.url }}/#privacy-statement).
 ## Linking to third-party sites
-Links to websites not under the control of the Health Analytics Research, and Policy team (<abbr title="Health Analytics Research, and Policy team">HARP</abbr>), including those to our social media accounts, are provided solely for the convenience of our website visitors. We are not responsible for the accuracy, currency or reliability of the content of such websites. <abbr title="Health Analytics Research, and Policy team">HARP</abbr> does not offer any guarantee in that regard and is not responsible for the information found through these links, and does not endorse the sites and their content.
-
-Visitors should also be aware that information found on non-<abbr title="Health Analytics Research, and Policy team">HARP</abbr> sites to which this website links is not subject to our [Privacy Notice](https://{{ site.baseurl}}/privacy/) and may not be accessible to persons with disabilities. The information offered may be available only in the language(s) used by the sites in question. With respect to privacy, visitors should research the privacy policies of these websites before providing personal information.
+Links to websites not under the control of DRHD, including those to our social media accounts, are provided solely for the convenience of our website visitors. DRHD is not responsible for the accuracy, currency or reliability of the content of such websites. DRHD does not offer any guarantee in that regard and is not responsible for the information found through these links and does not endorse the sites and their content.
+Visitors should also be aware that information found on non-DRHD sites to which this website links is not subject to our Privacy Notice and may not be accessible to persons with disabilities. The information offered may be available only in the language(s) used by the sites in question. With respect to privacy, visitors should research the privacy policies of these websites before providing personal information.
 ## Ownership of content and source code
 ### Content
-Materials on this website were produced for the purpose of providing our visitors access to information about health behaviours, knowledge and attitudes. Unless otherwise indicated, the content is available under the terms of the <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a> (CC-BY-SA), v4.0 or any later version.
+DRHD is the owner of the content on the Website. Unless otherwise indicated, the content is available under the terms of the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/) ("CC-BY-SA") or any later version. DRHD is free to and will from time to time edit, delete, or modify content on this website.
 ### Source Code
-The [code](https://github.com/DurhamRegionHARP/RRFSS-data-explorer) for this website is in the public domain. No licensing notice is necessary. This website uses open source sofware which may be subject to additional licensing terms.
+The code for this website is in the public domain. No licensing notice is necessary. This website uses open source software which may be subject to additional licensing terms.
+### Use of DRHD Materials
+You are free to reproduce and use content on the Website for any purpose, provided you adhere to the terms of the CC-BY-SA license, above. You can reproduce and use content on the Website for non-commercial purposes,such as:
+- To support program planning and evaluation
+- To advocate for public policy development
+- To improve community awareness of risks
+- For educational use and for research.
+
+## Risks
+DRHD takes care to publish only accurate information. From time to time errors do occur. For this reason, the Website is provided to you as is and without warranties of any kind.
 ## Accessibility statement
-<abbr title="Health Analytics Research, and Policy team">HARP</abbr> is committed to achieving a high standard of accessibility as defined in the [Accessibility for Ontarians with Disabilities Act](https://www.ontario.ca/laws/statute/05a11). In the event of difficulty using our website, contact us for assistance.
-## Interacting on social media
-This notice explains how the Health Analytics, Research, and Policy team (<abbr title="Health Analytics Research, and Policy team">HARP</abbr>) interacts with the public on social media platforms.
+DRHD is committed to achieving a high standard of accessibility as defined in the Accessibility for Ontarians with Disabilities Act. In the event of difficulty using our website, contact us for assistance.
+# Privacy Statement
+DRHD operates the Website. If you choose to use the Website, then you agree to the collection and use of information in relation with this Privacy Notice. DRHD will not, under any circumstance, use any information for any purpose inconsistent with the purpose for which the information was collected. DRHD will not use or share your information with anyone expect as described within this Privacy Notice.
+## Information Collected and Used
+DRHD tracks certain types of information during visits to the Website to perform website analytics. This information helps DRHD monitor site traffic and develop content that meets the needs of visitors. This information is treated as personal information. The information that we collect includes, but is not limited to:
+- Internet Protocol (IP) address of the device that has contacted the Website
+- Type of browser used
+- Type of operating system used
+- Date and time of the visit
+- Pages visited
+- Referral sources
 
-Your engagement with <abbr title="Health Analytics Research, and Policy team">HARP</abbr> on social media is in part governed by the Terms of Service/Use of the relevant third-party social media platform providers, as well as the following Terms and Conditions. <abbr title="Health Analytics Research, and Policy team">HARP</abbr> has no control over the social media platform providers’ Terms of Service/Use, but you are strongly encouraged to read them in addition to those that follow.
-### Use of social media
-<abbr title="Health Analytics Research, and Policy team">HARP</abbr> uses social media accounts as an alternative method of interacting with the public and providing users with an opportunity to interact in an informative and respectful environment.
-### Links to other websites and ads
-Social media accounts may post or display links or ads for websites that are not under the control of the <abbr title="Health Analytics Research, and Policy team">HARP</abbr>. <abbr title="Health Analytics Research, and Policy team">HARP</abbr> is not responsible for the information found through these links or ads; neither does it endorse the sites or their content.
-### Following, “liking” and subscribing
-<abbr title="Health Analytics Research, and Policy team">HARP</abbr>’s decision to follow, “like” or subscribe to another social media account does not imply an endorsement of that account, channel, page or site, and neither does sharing (re-tweeting, reposting or linking to) content from another user.
-### Comments and interaction
-<abbr title="Health Analytics Research, and Policy team">HARP</abbr> will read comments and participate in discussions when appropriate. Your comments and contributions must be relevant and respectful.
+DRHD may also use the personal information collected for non-administrative uses, such as audits, evaluations, research, and planning. Personal information collected will not be used for decision making processes about an individual or to profile individual visitors.
+## Service Providers
+DRHD carries out web analytics using services from third-party service providers, Google Inc. ("Google") and website hosting services from GitHub Inc. ("GitHub").
 
-<abbr title="Health Analytics Research, and Policy team">HARP</abbr> reserves the right to remove comments and contributions, and to block users based on the following criteria:
+In carrying out these services, these third parties may have access to your personal information and these providers may be based in the United States of America ("USA"), which means that the personal information collected is transmitted outside of Canada and may be subject to USA laws. In addition, Google and GitHub operate servers in other countries on which the web analytics and visitor data may be processed. Consequently, the data may be subject to the governing legislation of the country where it is processed. The reason for them having access to your personal information is to permit them to perform the tasks assigned to them on our behalf.
 
-The comments or contributions:
-- include personal information
-- infringe upon intellectual property or proprietary rights
-- are racist, hateful, sexist, homophobic or defamatory, or contain or refer to any obscenity or pornography
-- are threatening, violent, intimidating or harassing
-- are contrary to any federal, provincial or territorial laws of Canada
-- constitute impersonation, advertising or spam
-- encourage or incite any criminal activity
-- are written in a language other than English or French
-- otherwise violate this notice
+For more information about the privacy policies of these service providers, please visit their individual websites by using the following links:
+- [Google Analytics Terms of Service](https://marketingplatform.google.com/about/analytics/terms/us/)
+- [GitHub Privacy Statement](https://help.github.com/en/articles/github-privacy-statement)
 
-<abbr title="Health Analytics Research, and Policy team">HARP</abbr> reserves the right to report users and/or their comments and contributions to third-party social media service providers to prevent or remove the posting of content that is contrary to these Terms and Conditions, or to the Terms of Service/Use of the third-party social media platform.
-### Accessibility of social media platforms
-Social media platforms are third-party service providers and are not bound by <abbr title="Health Analytics Research, and Policy team">HARP</abbr>’s standards for web accessibility.
-### Privacy
-Social media accounts are not <abbr title="Health Analytics Research, and Policy team">HARP</abbr> websites and represent only their presence on third-party service providers.
+## Cookies
+To track visits for the use of web analytics, Google requires the use of cookies. A cookie is a piece of data sent from a website and stored on a user's computer by the user's web browser which the user is browsing. Cookies are generally used to enhance your browsing experience. These cookies are encrypted for security purposes. You can choose to set your browser to detect and reject cookies. If you change your browser settings to refuse cookies or disable JavaScript so that your visit will not be tracked, no personal information will be collected however, your visit to the Website may be affected in other ways, including making it difficult to access the information on the Website. If you use the [browser add-ons from Google](https://tools.google.com/dlpage/gaoptout), your visit to the Website will not be affected.
+## Storage of Information
+Google stores personal information in the USA.
+## Links to Other Sites
+The Website may contain links to other sites. If you click on a third-party link, you will be directed to that site. Please note that these external sites are not operated by DRHD thus, we advise you to review the Privacy Policy of these websites. DRHD does not have any control over, and assumes no responsibility for the content, privacy policies, or practices of any third-party sites or services.
+## Changes to This Privacy Notice
+DRHD may update this Privacy Notice from time to time. We encourage you to review this page periodically for any changes.
+## Contact Us
+If you have any questions about our privacy notice, do not hesitate to [contact us]({{ site.url }}/contact-us).
