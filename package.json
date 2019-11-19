@@ -15,8 +15,7 @@
     "chartist": "^0.11.0",
     "chartist-error-bars": "^0.0.4",
     "chartist-plugin-accessibility": "^0.0.5",
-    "chartist-plugin-tooltips": "^0.0.17",
-    "stickybits": "^3.6.7"
+    "chartist-plugin-tooltips": "^0.0.17"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
@@ -25,7 +24,6 @@
     "gulp-rename": "^1.4.0",
     "gulp-svgmin": "^2.2.0",
     "gulp-uglify": "^3.0.2",
-    "gulp-uglifycss": "^1.1.0",
-    "webpack": "^4.31.0"
+    "gulp-uglifycss": "^1.1.0"
   }
 }
