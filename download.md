@@ -13,7 +13,7 @@ breadcrumb: "false"
 secondarymenu: "false"
 feedback: "false"
 ---
-Download our data to get ready-to-use CSV files you can remix for your project.
+Grab a copy of our ready-to-use CSV files you can remix for your project.
 
-We are greatful to the team at [jsDelivr](https://www.jsdelivr.com/) for serving our files to you on their super fast CDN 🚀.
+We are grateful to the team at [jsDelivr](https://www.jsdelivr.com/) for serving our files to you on their super fast CDN 🚀.
 {% include download-table.html %}
