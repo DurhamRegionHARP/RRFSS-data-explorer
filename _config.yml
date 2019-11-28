@@ -31,6 +31,9 @@ exclude: ['gulpfile.js',
   'css/deps/',
   'script/src/']
 
+# Plugins
+plugins:
+  - jekyll-sitemap
 # Prose configuration
 # Set ignore parameter to limit access to files we don't want available to edit
 prose:
