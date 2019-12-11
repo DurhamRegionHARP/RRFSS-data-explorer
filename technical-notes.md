@@ -1,7 +1,7 @@
 ---
 published: true
 layout: "theme-base/default"
-permalink: "/technical-notes/"
+permalink: "/technical-notes"
 title: Technical Notes
 language: en
 description: "Data notes and details about the RRFSS Data Explorer"

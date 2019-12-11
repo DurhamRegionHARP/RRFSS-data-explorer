@@ -1,7 +1,7 @@
 ---
 published: true
 layout: "theme-base/default"
-permalink: "/contact-us/"
+permalink: "/contact-us"
 title: Contact the HARP team
 language: en
 altLangPrefix: index
