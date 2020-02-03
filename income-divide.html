@@ -21,6 +21,7 @@ secondarymenu: "false"
       <label for="categories">Choose a topic</label>
       <select id="categories" class="right">
         <optgroup label="Topics">
+          <option value="">Click to make a selection</option>
           {% for category in categories %}
             <option value="{{ category.name | slugify }}">{{ category.name }}</option>
           {% endfor %}
