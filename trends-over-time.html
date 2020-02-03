@@ -85,7 +85,7 @@ secondarymenu: "false"
   {% endfor %}
 {% endfor %}
 <script>
-  window.addEventListener('load', function(){
+  document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('categories').addEventListener('change', function(e){
       dataLayer.push({
         'event': 'selection-change',
