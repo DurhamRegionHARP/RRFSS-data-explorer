@@ -94,5 +94,13 @@ secondarymenu: "false"
       });
       window.location.hash = e.target.value;
     });
+    document.querySelectorAll('.ct-chart').forEach(function(chart){
+      chart.addEventListener('mouseenter', function(e){
+        dataLayer.push({
+          'event': 'chart-hover',
+          'chart': 'income-' + e.target.id.substr(7)
+        });
+      });
+    });
   });
 </script>
