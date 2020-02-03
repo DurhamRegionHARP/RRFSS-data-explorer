@@ -86,7 +86,11 @@ secondarymenu: "false"
 <script>
   window.addEventListener('load', function(){
     document.getElementById('categories').addEventListener('change', function(e){
-        window.location.hash = e.target.value;
+      dataLayer.push({
+        'event': 'selection-change',
+        'selected': e.target.value
+      });
+      window.location.hash = e.target.value;
     });
   });
 </script>
