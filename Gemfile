@@ -1,1 +1,3 @@
-gem 'jekyll-sitemap', git: 'https://github.com/jekyll/jekyll-sitemap'
+source 'https://rubygems.org' do
+  gem 'jekyll-sitemap', '~> 1.4'
+end
