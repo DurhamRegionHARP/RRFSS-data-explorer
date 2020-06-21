@@ -53,7 +53,8 @@ secondarymenu: "false"
   <div class="row">
     <div class="col-md-8 column">
       {% if row.dataType == 'Rate' or row.dataType == 'Count' %}
-        {% include components/line-rate.html row=row labels=labels %}{% else %}
+        {% include components/line-rate.html row=row labels=labels %}
+      {% else %}
         {% include components/line.html row=row labels=labels %}
       {% endif %}
     </div>
