@@ -41,12 +41,15 @@ secondarymenu: "false"
   {% for row in category.items %}
   <div class="row">
     <div class="col-xs-12">
-      <h3 id="{{ row.Indicator | slugify }}" class="chart-section">{{ row.Indicator | replace: "<", "&lt;" }}
+      <h3 id="{{ row.Indicator | slugify }}" class="chart-section">
+        {{ row.Indicator | replace: "<", "&lt;" }}
+        {% if row.subTitle %}
+        <span class="label label-primary">{{ row.subTitle }}</span>
+        {% endif %}
         <a href="#{{ row.Indicator | slugify }}" class="header-link"><span class="fa fa-link"></span></a>
       </h3>
     </div>
   </div>
-  {% if row.subTitle %}<p>{{ row.subTitle }}</p>{% endif %}
   <div class="row">
     <div class="col-md-8 column">
       {% if row.dataType == 'Rate' or row.dataType == 'Count' %}
