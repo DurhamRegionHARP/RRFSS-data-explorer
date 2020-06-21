@@ -44,7 +44,7 @@ secondarymenu: "false"
       <h3 id="{{ row.Indicator | slugify }}" class="chart-section">
         {{ row.Indicator | replace: "<", "&lt;" }}
         {% if row.subTitle %}
-        <span class="label label-primary">{{ row.subTitle }}</span>
+        <span class="label label-info">{{ row.subTitle }}</span>
         {% endif %}
         <a href="#{{ row.Indicator | slugify }}" class="header-link"><span class="fa fa-link"></span></a>
       </h3>
