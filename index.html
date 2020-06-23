@@ -33,20 +33,25 @@ feedback: "false"
 <div class="row">
   <div class="col-md-8">
     <h2>Latest Updates</h2>
-    <ul>
+    <ol>
       {% assign categories = "age-spread, gender-gap, income-divide, municipality" | split: ", " %}
-      {% for item in site.data.whats-new %}
+      {% assign items = site.data.whats-new | sort: "name" %}
+      {% for item in items %}
         <li>
           {{ item.name }}
-          {% for category in categories %}
-            <a href="{{ site.baseurl }}/{{ category }}#{{ item.name | slugify }}">{{ category | replace: "-", " " | capitalize }}</a>
-          {% endfor %}
-          {% if item.trend %}
-            <a href="{{ site.baseurl }}/trends-over-time#{{ item.name | slugify }}">Trends over time</a>
-          {% endif %}
+          <ul class="list-unstyled list-inline">
+            <li role="presentation">
+            {% for category in categories %}
+              <a class="small" href="{{ site.baseurl }}/{{ category }}#{{ item.name | slugify }}">{{ category | replace: "-", " " | capitalize }}</a>
+            {% endfor %}
+            {% if item.trend %}
+              <a class="small" href="{{ site.baseurl }}/trends-over-time#{{ item.name | slugify }}">Trends over time</a>
+            {% endif %}
+            </li>
+          </ul>
         </li>
       {% endfor %}
-    </ul>
+    </ol>
   </div>
 	<div class="col-md-4">
 		<h2>About the application</h2>
@@ -60,7 +65,7 @@ feedback: "false"
 	</div>
 </div>
 <div class="row">
-  <div class="col-md-8">
+  <div class="col-md-12">
 		{% capture about_rrfss %}{% include about.md %}{% endcapture %}
 		{{ about_rrfss | markdownify }}
 	</div>
