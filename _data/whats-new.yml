@@ -1,6 +1,6 @@
 - name: "Adult smoking prevalence"
   trend: true
-- name: "Successful quit attempt in the last year"
+- name: "Successful quit attempt"
   trend: true
 - name: "Self-Reported general health"
   trend: true
