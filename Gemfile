@@ -1,1 +1,4 @@
-gem 'jekyll-sitemap', git: 'https://github.com/jekyll/jekyll-sitemap'
+source 'https://rubygems.org' do
+  gem 'jekyll-sitemap', '~> 1.4'
+  gem 'kramdown', '>=2.3.0'
+end

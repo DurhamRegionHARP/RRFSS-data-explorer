@@ -57,8 +57,8 @@
     // Run when the element is clicked
     $elm.click( function(){
       var range = document.createRange();
-      range.selectNodeContents( this.querySelector(".link-text") );
-      var sel = window.getSelection();
+      range.selectNode( this.querySelector(".link-text").firstChild );
+      var sel = document.getSelection();
       sel.removeAllRanges();
       sel.addRange( range );
       if( document.queryCommandEnabled("copy") ){
@@ -66,7 +66,6 @@
         if ( success ){
           var tooltip = document.getElementById("tip-text");
           tooltip.innerHTML = "Copied!";
-          console.log("copied " + sel.toString() );
         }
       }
     } );

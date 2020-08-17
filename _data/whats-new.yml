@@ -1,0 +1,24 @@
+- name: "Adult smoking prevalence"
+  trend: true
+- name: "Successful quit attempt"
+  trend: true
+- name: "Self-Reported general health"
+  trend: true
+- name: "Self-Reported mental health"
+  trend: true
+- name: "Adult overweight and obesity"
+  trend: true
+- name: "Severe sedentary time"
+  trend: false
+- name: "Screen time use in children"
+  trend: false
+- name: "Perception of family violence in the community"
+  trend: false
+- name: "Active transportation"
+  trend: false
+- name: "Cannabis use during pregnancy"
+  trend: false
+- name: "Cannabis use while breastfeeding"
+  trend: false
+- name: "Sense of belonging to the local community"
+  trend: false
