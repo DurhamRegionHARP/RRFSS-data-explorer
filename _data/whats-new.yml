@@ -22,3 +22,11 @@
   trend: false
 - name: "Sense of belonging to the local community"
   trend: false
+- name: "Adult cannabis prevalence"
+  trend: false
+- name: "Regular cannabis use"
+  trend: false
+- name: "Impact of cannabis legalization"
+  trend: false
+- name: "Exposure to environmental cannabis smoke"
+  trend: false
